@@ -757,12 +757,13 @@ var app = (function () {
 
     	carts = new Carts({
     			props: {
-    				much: /*much*/ ctx[0],
-    				op2: /*op2*/ ctx[1],
-    				ko: /*ko*/ ctx[4],
-    				boxBelow: /*boxBelow*/ ctx[2],
-    				op4: /*op4*/ ctx[7],
-    				op5: /*op5*/ ctx[3],
+    				nostal: /*nostal*/ ctx[7],
+    				much: /*much*/ ctx[1],
+    				op2: /*op2*/ ctx[2],
+    				ko: /*ko*/ ctx[0],
+    				boxBelow: /*boxBelow*/ ctx[3],
+    				op4: /*op4*/ ctx[8],
+    				op5: /*op5*/ ctx[4],
     				cart1: /*cart1*/ ctx[5],
     				cart2: /*cart2*/ ctx[6]
     			}
@@ -778,12 +779,13 @@ var app = (function () {
     		},
     		p(ctx, dirty) {
     			const carts_changes = {};
-    			if (dirty & /*much*/ 1) carts_changes.much = /*much*/ ctx[0];
-    			if (dirty & /*op2*/ 2) carts_changes.op2 = /*op2*/ ctx[1];
-    			if (dirty & /*ko*/ 16) carts_changes.ko = /*ko*/ ctx[4];
-    			if (dirty & /*boxBelow*/ 4) carts_changes.boxBelow = /*boxBelow*/ ctx[2];
-    			if (dirty & /*op4*/ 128) carts_changes.op4 = /*op4*/ ctx[7];
-    			if (dirty & /*op5*/ 8) carts_changes.op5 = /*op5*/ ctx[3];
+    			if (dirty & /*nostal*/ 128) carts_changes.nostal = /*nostal*/ ctx[7];
+    			if (dirty & /*much*/ 2) carts_changes.much = /*much*/ ctx[1];
+    			if (dirty & /*op2*/ 4) carts_changes.op2 = /*op2*/ ctx[2];
+    			if (dirty & /*ko*/ 1) carts_changes.ko = /*ko*/ ctx[0];
+    			if (dirty & /*boxBelow*/ 8) carts_changes.boxBelow = /*boxBelow*/ ctx[3];
+    			if (dirty & /*op4*/ 256) carts_changes.op4 = /*op4*/ ctx[8];
+    			if (dirty & /*op5*/ 16) carts_changes.op5 = /*op5*/ ctx[4];
     			if (dirty & /*cart1*/ 32) carts_changes.cart1 = /*cart1*/ ctx[5];
     			if (dirty & /*cart2*/ 64) carts_changes.cart2 = /*cart2*/ ctx[6];
     			carts.$set(carts_changes);
@@ -803,7 +805,7 @@ var app = (function () {
     	};
     }
 
-    // (58:0) {#if finale === true }
+    // (59:0) {#if finale === true }
     function create_if_block$5(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -814,7 +816,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type_1(ctx, dirty) {
-    		if (/*op2*/ ctx[1] === "Bodyconx" || /*op2*/ ctx[1] === "offtheshoulderx" || /*op2*/ ctx[1] === "maxidressx" || /*op2*/ ctx[1] === "fourx" || /*op2*/ ctx[1] === "fivex" || /*op2*/ ctx[1] === "sixx" || /*op2*/ ctx[1] === "sevenx" || /*op2*/ ctx[1] === "eightx" || /*op2*/ ctx[1] === "ninex" || /*op2*/ ctx[1] === "tenx" || /*op2*/ ctx[1] === "elevenx" || /*op2*/ ctx[1] === "tvelvex") return 0;
+    		if (/*op2*/ ctx[2] === "Bodyconx" || /*op2*/ ctx[2] === "offtheshoulderx" || /*op2*/ ctx[2] === "maxidressx" || /*op2*/ ctx[2] === "fourx" || /*op2*/ ctx[2] === "fivex" || /*op2*/ ctx[2] === "sixx" || /*op2*/ ctx[2] === "sevenx" || /*op2*/ ctx[2] === "eightx" || /*op2*/ ctx[2] === "ninex" || /*op2*/ ctx[2] === "tenx" || /*op2*/ ctx[2] === "elevenx" || /*op2*/ ctx[2] === "tvelvex") return 0;
     		return 1;
     	}
 
@@ -878,7 +880,7 @@ var app = (function () {
     	};
     }
 
-    // (83:0) {:else}
+    // (84:0) {:else}
     function create_else_block_1$1(ctx) {
     	let div3;
     	let img0;
@@ -916,7 +918,7 @@ var app = (function () {
     	let dispose;
 
     	function select_block_type_3(ctx, dirty) {
-    		if (/*values*/ ctx[10][(/*a*/ ctx[8] - 6) / 2] === 1) return create_if_block_3$2;
+    		if (/*values*/ ctx[11][(/*a*/ ctx[9] - 6) / 2] === 1) return create_if_block_3$2;
     		return create_else_block_2;
     	}
 
@@ -948,33 +950,33 @@ var app = (function () {
     			if_block.c();
     			t10 = space();
     			div2 = element("div");
-    			attr(img0, "class", "checkin svelte-kelgsd");
-    			if (img0.src !== (img0_src_value = "" + (/*op2*/ ctx[1] + "/" + /*much*/ ctx[0] + ".png"))) attr(img0, "src", img0_src_value);
+    			attr(img0, "class", "checkin svelte-10fd4w1");
+    			if (img0.src !== (img0_src_value = "" + (/*op2*/ ctx[2] + "/" + /*much*/ ctx[1] + ".png"))) attr(img0, "src", img0_src_value);
     			attr(img0, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(img1, "class", "imgC svelte-kelgsd");
-    			if (img1.src !== (img1_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("B") + ".png"))) attr(img1, "src", img1_src_value);
+    			attr(img1, "class", "imgC svelte-10fd4w1");
+    			if (img1.src !== (img1_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("B") + ".png"))) attr(img1, "src", img1_src_value);
     			attr(img1, "alt", "");
-    			attr(img2, "class", "imgC svelte-kelgsd");
-    			if (img2.src !== (img2_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("E") + ".png"))) attr(img2, "src", img2_src_value);
+    			attr(img2, "class", "imgC svelte-10fd4w1");
+    			if (img2.src !== (img2_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("E") + ".png"))) attr(img2, "src", img2_src_value);
     			attr(img2, "alt", "");
-    			attr(img3, "class", "imgC svelte-kelgsd");
-    			if (img3.src !== (img3_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("F") + ".png"))) attr(img3, "src", img3_src_value);
+    			attr(img3, "class", "imgC svelte-10fd4w1");
+    			if (img3.src !== (img3_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("F") + ".png"))) attr(img3, "src", img3_src_value);
     			attr(img3, "alt", "");
-    			attr(div0, "class", "smallFlex svelte-kelgsd");
+    			attr(div0, "class", "smallFlex svelte-10fd4w1");
     			attr(input, "type", "range");
     			attr(input, "min", "6");
     			attr(input, "max", "18");
     			attr(input, "step", "2");
-    			attr(div1, "class", "contentPic svelte-kelgsd");
-    			attr(div3, "class", "start svelte-kelgsd");
+    			attr(div1, "class", "contentPic svelte-10fd4w1");
+    			attr(div3, "class", "start svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
     			append(div3, img0);
     			append(div3, t0);
     			append(div3, div1);
-    			html_tag.m(/*boxBelow*/ ctx[2], div1);
+    			html_tag.m(/*boxBelow*/ ctx[3], div1);
     			append(div1, t1);
     			append(div1, div0);
     			append(div0, img1);
@@ -988,7 +990,7 @@ var app = (function () {
     			append(div1, button1);
     			append(div1, t8);
     			append(div1, input);
-    			set_input_value(input, /*a*/ ctx[8]);
+    			set_input_value(input, /*a*/ ctx[9]);
     			append(div1, t9);
     			if_block.m(div1, null);
     			append(div3, t10);
@@ -997,15 +999,15 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen(img1, "click", /*click_handler_3*/ ctx[17]),
-    					listen(img2, "click", /*click_handler_4*/ ctx[18]),
-    					listen(img3, "click", /*click_handler_5*/ ctx[19]),
+    					listen(img1, "click", /*click_handler_3*/ ctx[18]),
+    					listen(img2, "click", /*click_handler_4*/ ctx[19]),
+    					listen(img3, "click", /*click_handler_5*/ ctx[20]),
     					listen(button0, "click", function () {
-    						if (is_function((/*cart1*/ ctx[5].push(/*op2*/ ctx[1] + "/" + /*much*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[2]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])))) (/*cart1*/ ctx[5].push(/*op2*/ ctx[1] + "/" + /*much*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[2]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])).apply(this, arguments);
+    						if (is_function((/*cart1*/ ctx[5].push(/*op2*/ ctx[2] + "/" + /*much*/ ctx[1]), /*nostal*/ ctx[7].push(/*ko*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[3]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])))) (/*cart1*/ ctx[5].push(/*op2*/ ctx[2] + "/" + /*much*/ ctx[1]), /*nostal*/ ctx[7].push(/*ko*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[3]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])).apply(this, arguments);
     					}),
-    					listen(button1, "click", /*falsy*/ ctx[12]),
-    					listen(input, "change", /*input_change_input_handler_1*/ ctx[20]),
-    					listen(input, "input", /*input_change_input_handler_1*/ ctx[20])
+    					listen(button1, "click", /*falsy*/ ctx[13]),
+    					listen(input, "change", /*input_change_input_handler_1*/ ctx[21]),
+    					listen(input, "input", /*input_change_input_handler_1*/ ctx[21])
     				];
 
     				mounted = true;
@@ -1014,26 +1016,26 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty & /*op2, much*/ 3 && img0.src !== (img0_src_value = "" + (/*op2*/ ctx[1] + "/" + /*much*/ ctx[0] + ".png"))) {
+    			if (!current || dirty & /*op2, much*/ 6 && img0.src !== (img0_src_value = "" + (/*op2*/ ctx[2] + "/" + /*much*/ ctx[1] + ".png"))) {
     				attr(img0, "src", img0_src_value);
     			}
 
-    			if (!current || dirty & /*boxBelow*/ 4) html_tag.p(/*boxBelow*/ ctx[2]);
+    			if (!current || dirty & /*boxBelow*/ 8) html_tag.p(/*boxBelow*/ ctx[3]);
 
-    			if (!current || dirty & /*op2*/ 2 && img1.src !== (img1_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("B") + ".png"))) {
+    			if (!current || dirty & /*op2*/ 4 && img1.src !== (img1_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("B") + ".png"))) {
     				attr(img1, "src", img1_src_value);
     			}
 
-    			if (!current || dirty & /*op2*/ 2 && img2.src !== (img2_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("E") + ".png"))) {
+    			if (!current || dirty & /*op2*/ 4 && img2.src !== (img2_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("E") + ".png"))) {
     				attr(img2, "src", img2_src_value);
     			}
 
-    			if (!current || dirty & /*op2*/ 2 && img3.src !== (img3_src_value = "" + (/*op2*/ ctx[1] + "/" + /*reple*/ ctx[11]("F") + ".png"))) {
+    			if (!current || dirty & /*op2*/ 4 && img3.src !== (img3_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("F") + ".png"))) {
     				attr(img3, "src", img3_src_value);
     			}
 
-    			if (dirty & /*a*/ 256) {
-    				set_input_value(input, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) {
+    				set_input_value(input, /*a*/ ctx[9]);
     			}
 
     			if (current_block_type === (current_block_type = select_block_type_3(ctx)) && if_block) {
@@ -1113,7 +1115,7 @@ var app = (function () {
     	};
     }
 
-    // (59:0) {#if op2 ==="Bodyconx" || op2 === "offtheshoulderx" || op2==="maxidressx" ||op2==="fourx"||op2==="fivex"||op2==="sixx"|| op2==="sevenx"|| op2==="eightx"||op2==="ninex"||op2==="tenx"||op2==="elevenx"||op2==="tvelvex"}
+    // (60:0) {#if op2 ==="Bodyconx" || op2 === "offtheshoulderx" || op2==="maxidressx" ||op2==="fourx"||op2==="fivex"||op2==="sixx"|| op2==="sevenx"|| op2==="eightx"||op2==="ninex"||op2==="tenx"||op2==="elevenx"||op2==="tvelvex"}
     function create_if_block_1$4(ctx) {
     	let div3;
     	let img0;
@@ -1151,7 +1153,7 @@ var app = (function () {
     	let dispose;
 
     	function select_block_type_2(ctx, dirty) {
-    		if (/*values*/ ctx[10][(/*a*/ ctx[8] - 6) / 2] === 1) return create_if_block_2$3;
+    		if (/*values*/ ctx[11][(/*a*/ ctx[9] - 6) / 2] === 1) return create_if_block_2$3;
     		return create_else_block$2;
     	}
 
@@ -1183,33 +1185,33 @@ var app = (function () {
     			if_block.c();
     			t10 = space();
     			div2 = element("div");
-    			attr(img0, "class", "checkin svelte-kelgsd");
-    			if (img0.src !== (img0_src_value = "" + (/*op5*/ ctx[3] + "/" + /*much*/ ctx[0] + ".png"))) attr(img0, "src", img0_src_value);
+    			attr(img0, "class", "checkin svelte-10fd4w1");
+    			if (img0.src !== (img0_src_value = "" + (/*op5*/ ctx[4] + "/" + /*much*/ ctx[1] + ".png"))) attr(img0, "src", img0_src_value);
     			attr(img0, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(img1, "class", "imgC svelte-kelgsd");
-    			if (img1.src !== (img1_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("B") + ".png"))) attr(img1, "src", img1_src_value);
+    			attr(img1, "class", "imgC svelte-10fd4w1");
+    			if (img1.src !== (img1_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("B") + ".png"))) attr(img1, "src", img1_src_value);
     			attr(img1, "alt", "");
-    			attr(img2, "class", "imgC svelte-kelgsd");
-    			if (img2.src !== (img2_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("E") + ".png"))) attr(img2, "src", img2_src_value);
+    			attr(img2, "class", "imgC svelte-10fd4w1");
+    			if (img2.src !== (img2_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("E") + ".png"))) attr(img2, "src", img2_src_value);
     			attr(img2, "alt", "");
-    			attr(img3, "class", "imgC svelte-kelgsd");
-    			if (img3.src !== (img3_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("F") + ".png"))) attr(img3, "src", img3_src_value);
+    			attr(img3, "class", "imgC svelte-10fd4w1");
+    			if (img3.src !== (img3_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("F") + ".png"))) attr(img3, "src", img3_src_value);
     			attr(img3, "alt", "");
-    			attr(div0, "class", "smallFlex svelte-kelgsd");
+    			attr(div0, "class", "smallFlex svelte-10fd4w1");
     			attr(input, "type", "range");
     			attr(input, "min", "6");
     			attr(input, "max", "18");
     			attr(input, "step", "2");
-    			attr(div1, "class", "contentPic svelte-kelgsd");
-    			attr(div3, "class", "start svelte-kelgsd");
+    			attr(div1, "class", "contentPic svelte-10fd4w1");
+    			attr(div3, "class", "start svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
     			append(div3, img0);
     			append(div3, t0);
     			append(div3, div1);
-    			html_tag.m(/*boxBelow*/ ctx[2], div1);
+    			html_tag.m(/*boxBelow*/ ctx[3], div1);
     			append(div1, t1);
     			append(div1, div0);
     			append(div0, img1);
@@ -1223,7 +1225,7 @@ var app = (function () {
     			append(div1, button1);
     			append(div1, t8);
     			append(div1, input);
-    			set_input_value(input, /*a*/ ctx[8]);
+    			set_input_value(input, /*a*/ ctx[9]);
     			append(div1, t9);
     			if_block.m(div1, null);
     			append(div3, t10);
@@ -1232,15 +1234,15 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen(img1, "click", /*click_handler*/ ctx[13]),
-    					listen(img2, "click", /*click_handler_1*/ ctx[14]),
-    					listen(img3, "click", /*click_handler_2*/ ctx[15]),
+    					listen(img1, "click", /*click_handler*/ ctx[14]),
+    					listen(img2, "click", /*click_handler_1*/ ctx[15]),
+    					listen(img3, "click", /*click_handler_2*/ ctx[16]),
     					listen(button0, "click", function () {
-    						if (is_function((/*cart1*/ ctx[5].push(/*op5*/ ctx[3] + "/" + /*much*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[2]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])))) (/*cart1*/ ctx[5].push(/*op5*/ ctx[3] + "/" + /*much*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[2]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])).apply(this, arguments);
+    						if (is_function((/*cart1*/ ctx[5].push(/*op5*/ ctx[4] + "/" + /*much*/ ctx[1]), /*nostal*/ ctx[7].push(/*ko*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[3]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])))) (/*cart1*/ ctx[5].push(/*op5*/ ctx[4] + "/" + /*much*/ ctx[1]), /*nostal*/ ctx[7].push(/*ko*/ ctx[0]), /*cart2*/ ctx[6].push(/*boxBelow*/ ctx[3]), console.log(/*cart1*/ ctx[5], /*cart2*/ ctx[6])).apply(this, arguments);
     					}),
-    					listen(button1, "click", /*falsy*/ ctx[12]),
-    					listen(input, "change", /*input_change_input_handler*/ ctx[16]),
-    					listen(input, "input", /*input_change_input_handler*/ ctx[16])
+    					listen(button1, "click", /*falsy*/ ctx[13]),
+    					listen(input, "change", /*input_change_input_handler*/ ctx[17]),
+    					listen(input, "input", /*input_change_input_handler*/ ctx[17])
     				];
 
     				mounted = true;
@@ -1249,26 +1251,26 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty & /*op5, much*/ 9 && img0.src !== (img0_src_value = "" + (/*op5*/ ctx[3] + "/" + /*much*/ ctx[0] + ".png"))) {
+    			if (!current || dirty & /*op5, much*/ 18 && img0.src !== (img0_src_value = "" + (/*op5*/ ctx[4] + "/" + /*much*/ ctx[1] + ".png"))) {
     				attr(img0, "src", img0_src_value);
     			}
 
-    			if (!current || dirty & /*boxBelow*/ 4) html_tag.p(/*boxBelow*/ ctx[2]);
+    			if (!current || dirty & /*boxBelow*/ 8) html_tag.p(/*boxBelow*/ ctx[3]);
 
-    			if (!current || dirty & /*op5*/ 8 && img1.src !== (img1_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("B") + ".png"))) {
+    			if (!current || dirty & /*op5*/ 16 && img1.src !== (img1_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("B") + ".png"))) {
     				attr(img1, "src", img1_src_value);
     			}
 
-    			if (!current || dirty & /*op5*/ 8 && img2.src !== (img2_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("E") + ".png"))) {
+    			if (!current || dirty & /*op5*/ 16 && img2.src !== (img2_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("E") + ".png"))) {
     				attr(img2, "src", img2_src_value);
     			}
 
-    			if (!current || dirty & /*op5*/ 8 && img3.src !== (img3_src_value = "" + (/*op5*/ ctx[3] + "/" + /*reple*/ ctx[11]("F") + ".png"))) {
+    			if (!current || dirty & /*op5*/ 16 && img3.src !== (img3_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("F") + ".png"))) {
     				attr(img3, "src", img3_src_value);
     			}
 
-    			if (dirty & /*a*/ 256) {
-    				set_input_value(input, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) {
+    				set_input_value(input, /*a*/ ctx[9]);
     			}
 
     			if (current_block_type === (current_block_type = select_block_type_2(ctx)) && if_block) {
@@ -1348,7 +1350,7 @@ var app = (function () {
     	};
     }
 
-    // (96:8) {:else}
+    // (97:8) {:else}
     function create_else_block_2(ctx) {
     	let p;
     	let t0;
@@ -1359,9 +1361,9 @@ var app = (function () {
     		c() {
     			p = element("p");
     			t0 = text("UK Size:");
-    			t1 = text(/*a*/ ctx[8]);
+    			t1 = text(/*a*/ ctx[9]);
     			t2 = text(" (Out of stock)");
-    			attr(p, "class", "red svelte-kelgsd");
+    			attr(p, "class", "red svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1370,7 +1372,7 @@ var app = (function () {
     			append(p, t2);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*a*/ 256) set_data(t1, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) set_data(t1, /*a*/ ctx[9]);
     		},
     		d(detaching) {
     			if (detaching) detach(p);
@@ -1378,7 +1380,7 @@ var app = (function () {
     	};
     }
 
-    // (94:8) {#if values[(a-6)/2] ===1}
+    // (95:8) {#if values[(a-6)/2] ===1}
     function create_if_block_3$2(ctx) {
     	let p;
     	let t0;
@@ -1388,8 +1390,8 @@ var app = (function () {
     		c() {
     			p = element("p");
     			t0 = text("UK Size:");
-    			t1 = text(/*a*/ ctx[8]);
-    			attr(p, "class", "green svelte-kelgsd");
+    			t1 = text(/*a*/ ctx[9]);
+    			attr(p, "class", "green svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1397,7 +1399,7 @@ var app = (function () {
     			append(p, t1);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*a*/ 256) set_data(t1, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) set_data(t1, /*a*/ ctx[9]);
     		},
     		d(detaching) {
     			if (detaching) detach(p);
@@ -1405,7 +1407,7 @@ var app = (function () {
     	};
     }
 
-    // (71:8) {:else}
+    // (72:8) {:else}
     function create_else_block$2(ctx) {
     	let p;
     	let t0;
@@ -1416,9 +1418,9 @@ var app = (function () {
     		c() {
     			p = element("p");
     			t0 = text("UK Size:");
-    			t1 = text(/*a*/ ctx[8]);
+    			t1 = text(/*a*/ ctx[9]);
     			t2 = text(" (Out of stock)");
-    			attr(p, "class", "red svelte-kelgsd");
+    			attr(p, "class", "red svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1427,7 +1429,7 @@ var app = (function () {
     			append(p, t2);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*a*/ 256) set_data(t1, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) set_data(t1, /*a*/ ctx[9]);
     		},
     		d(detaching) {
     			if (detaching) detach(p);
@@ -1435,7 +1437,7 @@ var app = (function () {
     	};
     }
 
-    // (69:8) {#if values[(a-6)/2] ===1}
+    // (70:8) {#if values[(a-6)/2] ===1}
     function create_if_block_2$3(ctx) {
     	let p;
     	let t0;
@@ -1445,8 +1447,8 @@ var app = (function () {
     		c() {
     			p = element("p");
     			t0 = text("UK Size:");
-    			t1 = text(/*a*/ ctx[8]);
-    			attr(p, "class", "green svelte-kelgsd");
+    			t1 = text(/*a*/ ctx[9]);
+    			attr(p, "class", "green svelte-10fd4w1");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1454,7 +1456,7 @@ var app = (function () {
     			append(p, t1);
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*a*/ 256) set_data(t1, /*a*/ ctx[8]);
+    			if (dirty & /*a*/ 512) set_data(t1, /*a*/ ctx[9]);
     		},
     		d(detaching) {
     			if (detaching) detach(p);
@@ -1471,7 +1473,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
-    		if (/*finale*/ ctx[9] === true) return 0;
+    		if (/*finale*/ ctx[10] === true) return 0;
     		return 1;
     	}
 
@@ -1539,11 +1541,9 @@ var app = (function () {
     	let { ko } = $$props; ///PRICE FOR AN ITEM 
     	let { cart1 } = $$props;
     	let { cart2 } = $$props;
-
-    	// ko = Number(ko.substring(0,ko.length - 1));
-    	// $: console.log(ko);
+    	let { nostal } = $$props;
+    	ko = Number(ko.substring(0, ko.length - 1));
     	console.log(get_store_value(count));
-
     	console.log(get_store_value(double));
     	console.log(get_store_value(user));
     	let op4;
@@ -1558,14 +1558,15 @@ var app = (function () {
     	console.log(boxBelow);
 
     	function reple(e) {
-    		return $$invalidate(7, op4 = much.replace(/.$/, e));
+    		return $$invalidate(8, op4 = much.replace(/.$/, e));
     	}
 
     	let finale = true;
 
     	function falsy() {
-    		$$invalidate(9, finale = false);
+    		$$invalidate(10, finale = false);
     	}
+    	console.log(boxBelow);
 
     	const click_handler = e => {
     		document.querySelector(".checkin").src = op5 + "/" + reple("B") + ".png";
@@ -1581,7 +1582,7 @@ var app = (function () {
 
     	function input_change_input_handler() {
     		a = to_number(this.value);
-    		$$invalidate(8, a);
+    		$$invalidate(9, a);
     	}
 
     	const click_handler_3 = e => {
@@ -1598,27 +1599,35 @@ var app = (function () {
 
     	function input_change_input_handler_1() {
     		a = to_number(this.value);
-    		$$invalidate(8, a);
+    		$$invalidate(9, a);
     	}
 
     	$$self.$$set = $$props => {
-    		if ("much" in $$props) $$invalidate(0, much = $$props.much);
-    		if ("op2" in $$props) $$invalidate(1, op2 = $$props.op2);
-    		if ("boxBelow" in $$props) $$invalidate(2, boxBelow = $$props.boxBelow);
-    		if ("op5" in $$props) $$invalidate(3, op5 = $$props.op5);
-    		if ("ko" in $$props) $$invalidate(4, ko = $$props.ko);
+    		if ("much" in $$props) $$invalidate(1, much = $$props.much);
+    		if ("op2" in $$props) $$invalidate(2, op2 = $$props.op2);
+    		if ("boxBelow" in $$props) $$invalidate(3, boxBelow = $$props.boxBelow);
+    		if ("op5" in $$props) $$invalidate(4, op5 = $$props.op5);
+    		if ("ko" in $$props) $$invalidate(0, ko = $$props.ko);
     		if ("cart1" in $$props) $$invalidate(5, cart1 = $$props.cart1);
     		if ("cart2" in $$props) $$invalidate(6, cart2 = $$props.cart2);
+    		if ("nostal" in $$props) $$invalidate(7, nostal = $$props.nostal);
+    	};
+
+    	$$self.$$.update = () => {
+    		if ($$self.$$.dirty & /*ko*/ 1) {
+    			console.log(ko);
+    		}
     	};
 
     	return [
+    		ko,
     		much,
     		op2,
     		boxBelow,
     		op5,
-    		ko,
     		cart1,
     		cart2,
+    		nostal,
     		op4,
     		a,
     		finale,
@@ -1641,13 +1650,14 @@ var app = (function () {
     		super();
 
     		init(this, options, instance$5, create_fragment$6, safe_not_equal, {
-    			much: 0,
-    			op2: 1,
-    			boxBelow: 2,
-    			op5: 3,
-    			ko: 4,
+    			much: 1,
+    			op2: 2,
+    			boxBelow: 3,
+    			op5: 4,
+    			ko: 0,
     			cart1: 5,
-    			cart2: 6
+    			cart2: 6,
+    			nostal: 7
     		});
     	}
     }
@@ -1685,161 +1695,161 @@ var app = (function () {
 
     function get_each_context_25(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_24(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_23(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_22(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_21(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_20(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_19(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_18(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_17(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_16(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_15(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_14(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_13(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_12(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_11(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_10(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_9(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_8(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_7(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_6(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_5$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_4$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_3$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_2$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context_1$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
     function get_each_context$2(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[173] = list[i];
+    	child_ctx[174] = list[i];
     	return child_ctx;
     }
 
-    // (1728:0) {:else}
+    // (1729:0) {:else}
     function create_else_block_1(ctx) {
     	let types;
     	let current;
@@ -1869,7 +1879,7 @@ var app = (function () {
     	};
     }
 
-    // (1338:0) {#if end === true}
+    // (1339:0) {#if end === true}
     function create_if_block_1$3(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -1939,13 +1949,14 @@ var app = (function () {
     	};
     }
 
-    // (1725:0) {:else}
+    // (1726:0) {:else}
     function create_else_block$1(ctx) {
     	let single;
     	let current;
 
     	single = new Single({
     			props: {
+    				nostal: /*nostal*/ ctx[11],
     				much: /*much*/ ctx[6],
     				op2: /*op2*/ ctx[1],
     				boxBelow: /*boxBelow*/ ctx[8],
@@ -1988,7 +1999,7 @@ var app = (function () {
     	};
     }
 
-    // (1339:0) {#if finale === true }
+    // (1340:0) {#if finale === true }
     function create_if_block_2$2(ctx) {
     	let current_block_type_index;
     	let if_block;
@@ -2128,7 +2139,7 @@ var app = (function () {
     	};
     }
 
-    // (1697:27) 
+    // (1698:27) 
     function create_if_block_28(ctx) {
     	let h1;
     	let t0;
@@ -2136,7 +2147,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_25 = /*numbersSFA*/ ctx[112];
+    	let each_value_25 = /*numbersSFA*/ ctx[113];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_25.length; i += 1) {
@@ -2158,8 +2169,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2176,8 +2187,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSFA, priceSFA, opz, falsy, descSFA, typeSFA*/ 33030144) {
-    				each_value_25 = /*numbersSFA*/ ctx[112];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSFA, priceSFA, opz, falsy, descSFA, typeSFA*/ 66060288) {
+    				each_value_25 = /*numbersSFA*/ ctx[113];
     				let i;
 
     				for (i = 0; i < each_value_25.length; i += 1) {
@@ -2238,14 +2249,14 @@ var app = (function () {
     	};
     }
 
-    // (1683:27) 
+    // (1684:27) 
     function create_if_block_27(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_24 = /*numbersSMO*/ ctx[108];
+    	let each_value_24 = /*numbersSMO*/ ctx[109];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_24.length; i += 1) {
@@ -2267,8 +2278,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2282,8 +2293,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[3] & /*numbersSMO, opz, falsy, priceSMO, descSMO, typeSMO*/ 25657344) {
-    				each_value_24 = /*numbersSMO*/ ctx[108];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSMO, priceSMO, opz, falsy, descSMO, typeSMO*/ 51314688) {
+    				each_value_24 = /*numbersSMO*/ ctx[109];
     				let i;
 
     				for (i = 0; i < each_value_24.length; i += 1) {
@@ -2344,14 +2355,14 @@ var app = (function () {
     	};
     }
 
-    // (1670:24) 
+    // (1671:24) 
     function create_if_block_26(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_23 = /*numbersSRE*/ ctx[104];
+    	let each_value_23 = /*numbersSRE*/ ctx[105];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_23.length; i += 1) {
@@ -2373,8 +2384,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2388,8 +2399,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[3] & /*numbersSRE, opz, falsy, priceSRE, descSRE, typeSRE*/ 25196544) {
-    				each_value_23 = /*numbersSRE*/ ctx[104];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSRE, priceSRE, opz, falsy, descSRE, typeSRE*/ 50393088) {
+    				each_value_23 = /*numbersSRE*/ ctx[105];
     				let i;
 
     				for (i = 0; i < each_value_23.length; i += 1) {
@@ -2450,14 +2461,14 @@ var app = (function () {
     	};
     }
 
-    // (1655:25) 
+    // (1656:25) 
     function create_if_block_25(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_22 = /*numbersSEA*/ ctx[100];
+    	let each_value_22 = /*numbersSEA*/ ctx[101];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_22.length; i += 1) {
@@ -2479,8 +2490,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2494,8 +2505,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[3] & /*numbersSEA, opz, falsy, priceSEA, descSEA, typeSEA*/ 25167744) {
-    				each_value_22 = /*numbersSEA*/ ctx[100];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSEA, priceSEA, opz, falsy, descSEA, typeSEA*/ 50335488) {
+    				each_value_22 = /*numbersSEA*/ ctx[101];
     				let i;
 
     				for (i = 0; i < each_value_22.length; i += 1) {
@@ -2556,14 +2567,14 @@ var app = (function () {
     	};
     }
 
-    // (1640:26) 
+    // (1641:26) 
     function create_if_block_24(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_21 = /*numbersSNE*/ ctx[96];
+    	let each_value_21 = /*numbersSNE*/ ctx[97];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_21.length; i += 1) {
@@ -2585,8 +2596,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2600,8 +2611,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[3] & /*numbersSNE, opz, falsy, priceSNE, descSNE, typeSNE*/ 25165944) {
-    				each_value_21 = /*numbersSNE*/ ctx[96];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSNE, priceSNE, opz, falsy, descSNE, typeSNE*/ 50331888) {
+    				each_value_21 = /*numbersSNE*/ ctx[97];
     				let i;
 
     				for (i = 0; i < each_value_21.length; i += 1) {
@@ -2662,14 +2673,14 @@ var app = (function () {
     	};
     }
 
-    // (1626:26) 
+    // (1627:26) 
     function create_if_block_23(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_20 = /*numbersSRI*/ ctx[92];
+    	let each_value_20 = /*numbersSRI*/ ctx[93];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_20.length; i += 1) {
@@ -2691,8 +2702,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2706,8 +2717,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSRI*/ 1073741824 | dirty[3] & /*opz, falsy, priceSRI, descSRI, typeSRI*/ 25165831) {
-    				each_value_20 = /*numbersSRI*/ ctx[92];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[3] & /*numbersSRI, priceSRI, opz, falsy, descSRI, typeSRI*/ 50331663) {
+    				each_value_20 = /*numbersSRI*/ ctx[93];
     				let i;
 
     				for (i = 0; i < each_value_20.length; i += 1) {
@@ -2768,14 +2779,14 @@ var app = (function () {
     	};
     }
 
-    // (1613:24) 
+    // (1614:24) 
     function create_if_block_22(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_19 = /*numbersSOF*/ ctx[88];
+    	let each_value_19 = /*numbersSOF*/ ctx[89];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_19.length; i += 1) {
@@ -2797,8 +2808,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2812,8 +2823,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSOF, priceSOF, descSOF, typeSOF*/ 1006632960 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_19 = /*numbersSOF*/ ctx[88];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSOF, priceSOF, descSOF, typeSOF*/ 2013265920 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_19 = /*numbersSOF*/ ctx[89];
     				let i;
 
     				for (i = 0; i < each_value_19.length; i += 1) {
@@ -2874,14 +2885,14 @@ var app = (function () {
     	};
     }
 
-    // (1599:25) 
+    // (1600:25) 
     function create_if_block_21(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_18 = /*numbersSSU*/ ctx[84];
+    	let each_value_18 = /*numbersSSU*/ ctx[85];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_18.length; i += 1) {
@@ -2903,8 +2914,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -2918,8 +2929,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSSU, priceSSU, descSSU, typeSSU*/ 62914560 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_18 = /*numbersSSU*/ ctx[84];
+    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSSU, priceSSU, descSSU, typeSSU*/ 125829120 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_18 = /*numbersSSU*/ ctx[85];
     				let i;
 
     				for (i = 0; i < each_value_18.length; i += 1) {
@@ -2980,14 +2991,14 @@ var app = (function () {
     	};
     }
 
-    // (1584:25) 
+    // (1585:25) 
     function create_if_block_20(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_17 = /*numbersSCA*/ ctx[80];
+    	let each_value_17 = /*numbersSCA*/ ctx[81];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_17.length; i += 1) {
@@ -3009,8 +3020,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3024,8 +3035,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSCA, priceSCA, descSCA, typeSCA*/ 3932160 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_17 = /*numbersSCA*/ ctx[80];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSCA, priceSCA, descSCA, typeSCA*/ 7864320 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_17 = /*numbersSCA*/ ctx[81];
     				let i;
 
     				for (i = 0; i < each_value_17.length; i += 1) {
@@ -3086,14 +3097,14 @@ var app = (function () {
     	};
     }
 
-    // (1568:30) 
+    // (1569:30) 
     function create_if_block_19(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_16 = /*numbersSMD*/ ctx[76];
+    	let each_value_16 = /*numbersSMD*/ ctx[77];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_16.length; i += 1) {
@@ -3115,8 +3126,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3130,8 +3141,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSMD, priceSMD, descSMD, typeSMD*/ 245760 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_16 = /*numbersSMD*/ ctx[76];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSMD, priceSMD, descSMD, typeSMD*/ 491520 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_16 = /*numbersSMD*/ ctx[77];
     				let i;
 
     				for (i = 0; i < each_value_16.length; i += 1) {
@@ -3192,14 +3203,14 @@ var app = (function () {
     	};
     }
 
-    // (1555:35) 
+    // (1556:35) 
     function create_if_block_18(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_15 = /*numbersSOTS*/ ctx[72];
+    	let each_value_15 = /*numbersSOTS*/ ctx[73];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_15.length; i += 1) {
@@ -3221,8 +3232,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3236,8 +3247,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSOTS, priceSOTS, descSOTS, typeSOTS*/ 15360 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_15 = /*numbersSOTS*/ ctx[72];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSOTS, priceSOTS, descSOTS, typeSOTS*/ 30720 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_15 = /*numbersSOTS*/ ctx[73];
     				let i;
 
     				for (i = 0; i < each_value_15.length; i += 1) {
@@ -3298,14 +3309,14 @@ var app = (function () {
     	};
     }
 
-    // (1542:28) 
+    // (1543:28) 
     function create_if_block_17(ctx) {
     	let h1;
     	let h1_transition;
     	let t1;
     	let div;
     	let current;
-    	let each_value_14 = /*numbersSBC*/ ctx[68];
+    	let each_value_14 = /*numbersSBC*/ ctx[69];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_14.length; i += 1) {
@@ -3327,8 +3338,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3342,8 +3353,8 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*boxBelow, much*/ 320 | dirty[2] & /*numbersSBC, priceSBC, descSBC, typeSBC*/ 960 | dirty[3] & /*opz, falsy*/ 25165824) {
-    				each_value_14 = /*numbersSBC*/ ctx[68];
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSBC, priceSCA, numbersSCA, priceSBC, descSBC, typeSBC*/ 2623360 | dirty[3] & /*opz, falsy*/ 50331648) {
+    				each_value_14 = /*numbersSBC*/ ctx[69];
     				let i;
 
     				for (i = 0; i < each_value_14.length; i += 1) {
@@ -3404,7 +3415,7 @@ var app = (function () {
     	};
     }
 
-    // (1526:25) 
+    // (1527:25) 
     function create_if_block_16(ctx) {
     	let h1;
     	let t0;
@@ -3412,7 +3423,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_13 = /*numbersBA*/ ctx[64];
+    	let each_value_13 = /*numbersBA*/ ctx[65];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_13.length; i += 1) {
@@ -3434,8 +3445,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3452,8 +3463,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, much*/ 322 | dirty[2] & /*numbersBA, priceBA, descBA, typeBA*/ 60 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_13 = /*numbersBA*/ ctx[64];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[2] & /*numbersBA, priceBA, descBA, typeBA*/ 120 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_13 = /*numbersBA*/ ctx[65];
     				let i;
 
     				for (i = 0; i < each_value_13.length; i += 1) {
@@ -3514,7 +3525,7 @@ var app = (function () {
     	};
     }
 
-    // (1513:25) 
+    // (1514:25) 
     function create_if_block_15(ctx) {
     	let h1;
     	let t0;
@@ -3522,7 +3533,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_12 = /*numbersRO*/ ctx[60];
+    	let each_value_12 = /*numbersRO*/ ctx[61];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_12.length; i += 1) {
@@ -3544,8 +3555,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3562,8 +3573,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, much*/ 322 | dirty[1] & /*numbersRO, typeRO*/ 1610612736 | dirty[2] & /*priceRO, descRO*/ 3 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_12 = /*numbersRO*/ ctx[60];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[1] & /*numbersRO*/ 1073741824 | dirty[2] & /*priceRO, descRO, typeRO*/ 7 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_12 = /*numbersRO*/ ctx[61];
     				let i;
 
     				for (i = 0; i < each_value_12.length; i += 1) {
@@ -3624,7 +3635,7 @@ var app = (function () {
     	};
     }
 
-    // (1499:26) 
+    // (1500:26) 
     function create_if_block_14(ctx) {
     	let h1;
     	let t0;
@@ -3632,7 +3643,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_11 = /*numbersCA*/ ctx[56];
+    	let each_value_11 = /*numbersCA*/ ctx[57];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_11.length; i += 1) {
@@ -3654,8 +3665,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3672,8 +3683,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, much*/ 322 | dirty[1] & /*numbersCA, priceCA, descCA, typeCA*/ 503316480 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_11 = /*numbersCA*/ ctx[56];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[1] & /*numbersCA, priceCA, descCA, typeCA*/ 1006632960 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_11 = /*numbersCA*/ ctx[57];
     				let i;
 
     				for (i = 0; i < each_value_11.length; i += 1) {
@@ -3734,7 +3745,7 @@ var app = (function () {
     	};
     }
 
-    // (1485:27) 
+    // (1486:27) 
     function create_if_block_13(ctx) {
     	let h1;
     	let t0;
@@ -3742,7 +3753,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_10 = /*numbersSA*/ ctx[52];
+    	let each_value_10 = /*numbersSA*/ ctx[53];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_10.length; i += 1) {
@@ -3764,8 +3775,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3782,8 +3793,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, much*/ 322 | dirty[1] & /*numbersSA, priceSA, descSA, typeSA*/ 31457280 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_10 = /*numbersSA*/ ctx[52];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[1] & /*numbersSA, priceSA, descSA, typeSA*/ 62914560 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_10 = /*numbersSA*/ ctx[53];
     				let i;
 
     				for (i = 0; i < each_value_10.length; i += 1) {
@@ -3844,7 +3855,7 @@ var app = (function () {
     	};
     }
 
-    // (1470:27) 
+    // (1471:27) 
     function create_if_block_12(ctx) {
     	let h1;
     	let t0;
@@ -3852,7 +3863,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_9 = /*numbersT*/ ctx[48];
+    	let each_value_9 = /*numbersT*/ ctx[49];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_9.length; i += 1) {
@@ -3874,8 +3885,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -3892,8 +3903,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*op2, boxBelow, much*/ 322 | dirty[1] & /*numbersT, priceT, descT, typeT*/ 1966080 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_9 = /*numbersT*/ ctx[48];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[1] & /*numbersT, priceT, descT, typeT*/ 3932160 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_9 = /*numbersT*/ ctx[49];
     				let i;
 
     				for (i = 0; i < each_value_9.length; i += 1) {
@@ -3954,7 +3965,7 @@ var app = (function () {
     	};
     }
 
-    // (1456:27) 
+    // (1457:27) 
     function create_if_block_11(ctx) {
     	let h1;
     	let t0;
@@ -3962,7 +3973,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_8 = /*numbersB*/ ctx[44];
+    	let each_value_8 = /*numbersB*/ ctx[45];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_8.length; i += 1) {
@@ -3984,8 +3995,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4002,8 +4013,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*op2, boxBelow, much*/ 322 | dirty[1] & /*numbersB, priceB, descB, typeB*/ 122880 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_8 = /*numbersB*/ ctx[44];
+    			if (dirty[0] & /*ko, op2, boxBelow, much*/ 326 | dirty[1] & /*numbersB, priceB, descB, typeB*/ 245760 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_8 = /*numbersB*/ ctx[45];
     				let i;
 
     				for (i = 0; i < each_value_8.length; i += 1) {
@@ -4064,7 +4075,7 @@ var app = (function () {
     	};
     }
 
-    // (1443:29) 
+    // (1444:29) 
     function create_if_block_10(ctx) {
     	let h1;
     	let t0;
@@ -4072,7 +4083,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_7 = /*numbersS*/ ctx[40];
+    	let each_value_7 = /*numbersS*/ ctx[41];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_7.length; i += 1) {
@@ -4094,8 +4105,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4112,8 +4123,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*op2, boxBelow, much*/ 322 | dirty[1] & /*numbersS, priceS, descS, typeS*/ 7680 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_7 = /*numbersS*/ ctx[40];
+    			if (dirty[0] & /*ko, op2, boxBelow, much*/ 326 | dirty[1] & /*numbersS, priceS, descS, typeS*/ 15360 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_7 = /*numbersS*/ ctx[41];
     				let i;
 
     				for (i = 0; i < each_value_7.length; i += 1) {
@@ -4174,7 +4185,7 @@ var app = (function () {
     	};
     }
 
-    // (1430:23) 
+    // (1431:23) 
     function create_if_block_9(ctx) {
     	let h1;
     	let t0;
@@ -4182,7 +4193,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_6 = /*numbersD*/ ctx[36];
+    	let each_value_6 = /*numbersD*/ ctx[37];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_6.length; i += 1) {
@@ -4204,8 +4215,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4222,8 +4233,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*op2, boxBelow, much*/ 322 | dirty[1] & /*numbersD, priceD, descD, typeD*/ 480 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_6 = /*numbersD*/ ctx[36];
+    			if (dirty[0] & /*ko, op2, boxBelow, much*/ 326 | dirty[1] & /*numbersD, priceD, descD, typeD*/ 960 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_6 = /*numbersD*/ ctx[37];
     				let i;
 
     				for (i = 0; i < each_value_6.length; i += 1) {
@@ -4284,7 +4295,7 @@ var app = (function () {
     	};
     }
 
-    // (1416:25) 
+    // (1417:25) 
     function create_if_block_8(ctx) {
     	let h1;
     	let t0;
@@ -4293,7 +4304,7 @@ var app = (function () {
     	let t2;
     	let div;
     	let current;
-    	let each_value_5 = /*numbersH*/ ctx[32];
+    	let each_value_5 = /*numbersH*/ ctx[33];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_5.length; i += 1) {
@@ -4316,8 +4327,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4335,8 +4346,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, much*/ 322 | dirty[1] & /*numbersH, priceH, descH, typeH*/ 30 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_5 = /*numbersH*/ ctx[32];
+    			if (dirty[0] & /*ko, boxBelow, op2, much*/ 326 | dirty[1] & /*numbersH, priceH, descH, typeH*/ 60 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_5 = /*numbersH*/ ctx[33];
     				let i;
 
     				for (i = 0; i < each_value_5.length; i += 1) {
@@ -4397,7 +4408,7 @@ var app = (function () {
     	};
     }
 
-    // (1402:24) 
+    // (1403:24) 
     function create_if_block_7(ctx) {
     	let h1;
     	let t0;
@@ -4406,7 +4417,7 @@ var app = (function () {
     	let t2;
     	let div;
     	let current;
-    	let each_value_4 = /*numbersL*/ ctx[28];
+    	let each_value_4 = /*numbersL*/ ctx[29];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_4.length; i += 1) {
@@ -4429,8 +4440,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4448,8 +4459,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, numbersL, much, priceL, typeL*/ 1879048514 | dirty[1] & /*descL*/ 1 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_4 = /*numbersL*/ ctx[28];
+    			if (dirty[0] & /*ko, numbersL, boxBelow, op2, much, typeL*/ 1610613062 | dirty[1] & /*priceL, descL*/ 3 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_4 = /*numbersL*/ ctx[29];
     				let i;
 
     				for (i = 0; i < each_value_4.length; i += 1) {
@@ -4510,7 +4521,7 @@ var app = (function () {
     	};
     }
 
-    // (1387:24) 
+    // (1388:24) 
     function create_if_block_6(ctx) {
     	let h1;
     	let t0;
@@ -4519,7 +4530,7 @@ var app = (function () {
     	let t2;
     	let div;
     	let current;
-    	let each_value_3 = /*numbersK*/ ctx[24];
+    	let each_value_3 = /*numbersK*/ ctx[25];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_3.length; i += 1) {
@@ -4542,8 +4553,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4561,8 +4572,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, numbersK, much, priceK, descK, typeK*/ 251658562 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_3 = /*numbersK*/ ctx[24];
+    			if (dirty[0] & /*ko, numbersK, priceK, boxBelow, op2, much, descK, typeK*/ 503316806 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_3 = /*numbersK*/ ctx[25];
     				let i;
 
     				for (i = 0; i < each_value_3.length; i += 1) {
@@ -4623,7 +4634,7 @@ var app = (function () {
     	};
     }
 
-    // (1373:31) 
+    // (1374:31) 
     function create_if_block_5(ctx) {
     	let h1;
     	let t0;
@@ -4631,7 +4642,7 @@ var app = (function () {
     	let t1;
     	let div;
     	let current;
-    	let each_value_2 = /*numbersR*/ ctx[20];
+    	let each_value_2 = /*numbersR*/ ctx[21];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_2.length; i += 1) {
@@ -4653,8 +4664,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4671,8 +4682,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, numbersR, much, priceR, descR, typeR*/ 15728962 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_2 = /*numbersR*/ ctx[20];
+    			if (dirty[0] & /*ko, numbersR, priceR, boxBelow, op2, much, descR, typeR*/ 31457606 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_2 = /*numbersR*/ ctx[21];
     				let i;
 
     				for (i = 0; i < each_value_2.length; i += 1) {
@@ -4733,7 +4744,7 @@ var app = (function () {
     	};
     }
 
-    // (1359:24) 
+    // (1360:24) 
     function create_if_block_4$1(ctx) {
     	let h1;
     	let t0;
@@ -4742,7 +4753,7 @@ var app = (function () {
     	let t2;
     	let div;
     	let current;
-    	let each_value_1 = /*numbersM*/ ctx[16];
+    	let each_value_1 = /*numbersM*/ ctx[17];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value_1.length; i += 1) {
@@ -4765,8 +4776,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4784,8 +4795,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, numbersM, much, priceM, descM, typeM*/ 983362 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value_1 = /*numbersM*/ ctx[16];
+    			if (dirty[0] & /*ko, numbersM, priceM, boxBelow, op2, much, descM, typeM*/ 1966406 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value_1 = /*numbersM*/ ctx[17];
     				let i;
 
     				for (i = 0; i < each_value_1.length; i += 1) {
@@ -4846,7 +4857,7 @@ var app = (function () {
     	};
     }
 
-    // (1343:0) {#if op2==="Ted"}
+    // (1344:0) {#if op2==="Ted"}
     function create_if_block_3$1(ctx) {
     	let h1;
     	let t0;
@@ -4855,7 +4866,7 @@ var app = (function () {
     	let t2;
     	let div;
     	let current;
-    	let each_value = /*numbers*/ ctx[12];
+    	let each_value = /*numbers*/ ctx[13];
     	let each_blocks = [];
 
     	for (let i = 0; i < each_value.length; i += 1) {
@@ -4878,8 +4889,8 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(h1, "class", "mainDiv svelte-1yhnvv8");
-    			attr(div, "class", "containerFirm svelte-1yhnvv8");
+    			attr(h1, "class", "mainDiv svelte-18kfgwi");
+    			attr(div, "class", "containerFirm svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -4897,8 +4908,8 @@ var app = (function () {
     		p(ctx, dirty) {
     			if (!current || dirty[0] & /*op2*/ 2) set_data(t0, /*op2*/ ctx[1]);
 
-    			if (dirty[0] & /*boxBelow, op2, numbers, much, goSingle, price, desc, type*/ 63810 | dirty[3] & /*falsy*/ 8388608) {
-    				each_value = /*numbers*/ ctx[12];
+    			if (dirty[0] & /*ko, numbers, price, boxBelow, op2, much, goSingle, desc, type*/ 127302 | dirty[3] & /*falsy*/ 16777216) {
+    				each_value = /*numbers*/ ctx[13];
     				let i;
 
     				for (i = 0; i < each_value.length; i += 1) {
@@ -4959,20 +4970,20 @@ var app = (function () {
     	};
     }
 
-    // (1702:0) {#each numbersSFA as item }
+    // (1703:0) {#each numbersSFA as item }
     function create_each_block_25(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSFA*/ ctx[113], /*numbersSFA*/ ctx[112]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSFA*/ ctx[114], /*numbersSFA*/ ctx[113]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSFA*/ ctx[115], /*numbersSFA*/ ctx[112]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSFA*/ ctx[116], /*numbersSFA*/ ctx[113]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSFA*/ ctx[114], /*numbersSFA*/ ctx[112]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSFA*/ ctx[115], /*numbersSFA*/ ctx[113]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -4980,7 +4991,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_25(...args) {
-    		return /*click_handler_25*/ ctx[143](/*item*/ ctx[173], ...args);
+    		return /*click_handler_25*/ ctx[144](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -4994,14 +5005,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5047,20 +5058,20 @@ var app = (function () {
     	};
     }
 
-    // (1688:0) {#each numbersSMO as item }
+    // (1689:0) {#each numbersSMO as item }
     function create_each_block_24(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSMO*/ ctx[109], /*numbersSMO*/ ctx[108]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSMO*/ ctx[110], /*numbersSMO*/ ctx[109]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSMO*/ ctx[111], /*numbersSMO*/ ctx[108]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSMO*/ ctx[112], /*numbersSMO*/ ctx[109]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSMO*/ ctx[110], /*numbersSMO*/ ctx[108]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSMO*/ ctx[111], /*numbersSMO*/ ctx[109]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5068,7 +5079,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_24(...args) {
-    		return /*click_handler_24*/ ctx[142](/*item*/ ctx[173], ...args);
+    		return /*click_handler_24*/ ctx[143](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5082,14 +5093,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5135,20 +5146,20 @@ var app = (function () {
     	};
     }
 
-    // (1675:0) {#each numbersSRE as item }
+    // (1676:0) {#each numbersSRE as item }
     function create_each_block_23(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSRE*/ ctx[105], /*numbersSRE*/ ctx[104]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSRE*/ ctx[106], /*numbersSRE*/ ctx[105]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSRE*/ ctx[107], /*numbersSRE*/ ctx[104]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSRE*/ ctx[108], /*numbersSRE*/ ctx[105]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSRE*/ ctx[106], /*numbersSRE*/ ctx[104]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSRE*/ ctx[107], /*numbersSRE*/ ctx[105]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5156,7 +5167,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_23(...args) {
-    		return /*click_handler_23*/ ctx[141](/*item*/ ctx[173], ...args);
+    		return /*click_handler_23*/ ctx[142](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5170,14 +5181,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5223,20 +5234,20 @@ var app = (function () {
     	};
     }
 
-    // (1660:0) {#each numbersSEA as item }
+    // (1661:0) {#each numbersSEA as item }
     function create_each_block_22(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSEA*/ ctx[101], /*numbersSEA*/ ctx[100]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSEA*/ ctx[102], /*numbersSEA*/ ctx[101]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSEA*/ ctx[103], /*numbersSEA*/ ctx[100]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSEA*/ ctx[104], /*numbersSEA*/ ctx[101]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSEA*/ ctx[102], /*numbersSEA*/ ctx[100]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSEA*/ ctx[103], /*numbersSEA*/ ctx[101]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5244,7 +5255,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_22(...args) {
-    		return /*click_handler_22*/ ctx[140](/*item*/ ctx[173], ...args);
+    		return /*click_handler_22*/ ctx[141](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5258,14 +5269,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5311,20 +5322,20 @@ var app = (function () {
     	};
     }
 
-    // (1645:0) {#each numbersSNE as item }
+    // (1646:0) {#each numbersSNE as item }
     function create_each_block_21(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSNE*/ ctx[97], /*numbersSNE*/ ctx[96]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSNE*/ ctx[98], /*numbersSNE*/ ctx[97]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSNE*/ ctx[99], /*numbersSNE*/ ctx[96]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSNE*/ ctx[100], /*numbersSNE*/ ctx[97]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSNE*/ ctx[98], /*numbersSNE*/ ctx[96]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSNE*/ ctx[99], /*numbersSNE*/ ctx[97]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5332,7 +5343,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_21(...args) {
-    		return /*click_handler_21*/ ctx[139](/*item*/ ctx[173], ...args);
+    		return /*click_handler_21*/ ctx[140](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5346,14 +5357,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5399,20 +5410,20 @@ var app = (function () {
     	};
     }
 
-    // (1631:0) {#each numbersSRI as item }
+    // (1632:0) {#each numbersSRI as item }
     function create_each_block_20(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSRI*/ ctx[93], /*numbersSRI*/ ctx[92]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSRI*/ ctx[94], /*numbersSRI*/ ctx[93]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSRI*/ ctx[95], /*numbersSRI*/ ctx[92]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSRI*/ ctx[96], /*numbersSRI*/ ctx[93]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSRI*/ ctx[94], /*numbersSRI*/ ctx[92]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSRI*/ ctx[95], /*numbersSRI*/ ctx[93]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5420,7 +5431,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_20(...args) {
-    		return /*click_handler_20*/ ctx[138](/*item*/ ctx[173], ...args);
+    		return /*click_handler_20*/ ctx[139](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5434,14 +5445,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5487,20 +5498,20 @@ var app = (function () {
     	};
     }
 
-    // (1618:0) {#each numbersSOF as item }
+    // (1619:0) {#each numbersSOF as item }
     function create_each_block_19(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSOF*/ ctx[89], /*numbersSOF*/ ctx[88]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSOF*/ ctx[90], /*numbersSOF*/ ctx[89]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSOF*/ ctx[91], /*numbersSOF*/ ctx[88]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSOF*/ ctx[92], /*numbersSOF*/ ctx[89]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSOF*/ ctx[90], /*numbersSOF*/ ctx[88]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSOF*/ ctx[91], /*numbersSOF*/ ctx[89]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5508,7 +5519,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_19(...args) {
-    		return /*click_handler_19*/ ctx[137](/*item*/ ctx[173], ...args);
+    		return /*click_handler_19*/ ctx[138](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5522,14 +5533,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5575,20 +5586,20 @@ var app = (function () {
     	};
     }
 
-    // (1604:0) {#each numbersSSU as item }
+    // (1605:0) {#each numbersSSU as item }
     function create_each_block_18(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSSU*/ ctx[85], /*numbersSSU*/ ctx[84]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSSU*/ ctx[86], /*numbersSSU*/ ctx[85]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSSU*/ ctx[87], /*numbersSSU*/ ctx[84]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSSU*/ ctx[88], /*numbersSSU*/ ctx[85]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSSU*/ ctx[86], /*numbersSSU*/ ctx[84]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSSU*/ ctx[87], /*numbersSSU*/ ctx[85]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5596,7 +5607,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_18(...args) {
-    		return /*click_handler_18*/ ctx[136](/*item*/ ctx[173], ...args);
+    		return /*click_handler_18*/ ctx[137](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5610,14 +5621,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5663,20 +5674,20 @@ var app = (function () {
     	};
     }
 
-    // (1589:0) {#each numbersSCA as item }
+    // (1590:0) {#each numbersSCA as item }
     function create_each_block_17(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSCA*/ ctx[81], /*numbersSCA*/ ctx[80]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSCA*/ ctx[82], /*numbersSCA*/ ctx[81]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSCA*/ ctx[83], /*numbersSCA*/ ctx[80]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSCA*/ ctx[84], /*numbersSCA*/ ctx[81]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSCA*/ ctx[82], /*numbersSCA*/ ctx[80]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSCA*/ ctx[83], /*numbersSCA*/ ctx[81]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5684,7 +5695,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_17(...args) {
-    		return /*click_handler_17*/ ctx[135](/*item*/ ctx[173], ...args);
+    		return /*click_handler_17*/ ctx[136](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5698,14 +5709,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5751,20 +5762,20 @@ var app = (function () {
     	};
     }
 
-    // (1573:0) {#each numbersSMD as item }
+    // (1574:0) {#each numbersSMD as item }
     function create_each_block_16(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSMD*/ ctx[77], /*numbersSMD*/ ctx[76]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSMD*/ ctx[78], /*numbersSMD*/ ctx[77]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSMD*/ ctx[79], /*numbersSMD*/ ctx[76]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSMD*/ ctx[80], /*numbersSMD*/ ctx[77]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSMD*/ ctx[78], /*numbersSMD*/ ctx[76]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSMD*/ ctx[79], /*numbersSMD*/ ctx[77]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5772,7 +5783,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_16(...args) {
-    		return /*click_handler_16*/ ctx[134](/*item*/ ctx[173], ...args);
+    		return /*click_handler_16*/ ctx[135](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5786,14 +5797,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5839,20 +5850,20 @@ var app = (function () {
     	};
     }
 
-    // (1560:0) {#each numbersSOTS as item }
+    // (1561:0) {#each numbersSOTS as item }
     function create_each_block_15(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSOTS*/ ctx[73], /*numbersSOTS*/ ctx[72]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSOTS*/ ctx[74], /*numbersSOTS*/ ctx[73]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSOTS*/ ctx[75], /*numbersSOTS*/ ctx[72]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSOTS*/ ctx[76], /*numbersSOTS*/ ctx[73]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSOTS*/ ctx[74], /*numbersSOTS*/ ctx[72]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSOTS*/ ctx[75], /*numbersSOTS*/ ctx[73]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5860,7 +5871,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_15(...args) {
-    		return /*click_handler_15*/ ctx[133](/*item*/ ctx[173], ...args);
+    		return /*click_handler_15*/ ctx[134](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5874,14 +5885,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -5927,20 +5938,20 @@ var app = (function () {
     	};
     }
 
-    // (1547:0) {#each numbersSBC as item }
+    // (1548:0) {#each numbersSBC as item }
     function create_each_block_14(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSBC*/ ctx[69], /*numbersSBC*/ ctx[68]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSBC*/ ctx[70], /*numbersSBC*/ ctx[69]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSBC*/ ctx[71], /*numbersSBC*/ ctx[68]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSBC*/ ctx[72], /*numbersSBC*/ ctx[69]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSBC*/ ctx[70], /*numbersSBC*/ ctx[68]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSBC*/ ctx[71], /*numbersSBC*/ ctx[69]) + "";
     	let t2;
     	let div1_transition;
     	let current;
@@ -5948,7 +5959,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_14(...args) {
-    		return /*click_handler_14*/ ctx[132](/*item*/ ctx[173], ...args);
+    		return /*click_handler_14*/ ctx[133](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -5962,14 +5973,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", "contentPic " + /*opz*/ ctx[117](/*item*/ ctx[173]) + opy(/*item*/ ctx[173]) + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", "contentPic " + /*opz*/ ctx[118](/*item*/ ctx[174]) + opy(/*item*/ ctx[174]) + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6015,20 +6026,20 @@ var app = (function () {
     	};
     }
 
-    // (1531:0) {#each numbersBA as item }
+    // (1532:0) {#each numbersBA as item }
     function create_each_block_13(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeBA*/ ctx[65], /*numbersBA*/ ctx[64]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeBA*/ ctx[66], /*numbersBA*/ ctx[65]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descBA*/ ctx[67], /*numbersBA*/ ctx[64]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descBA*/ ctx[68], /*numbersBA*/ ctx[65]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceBA*/ ctx[66], /*numbersBA*/ ctx[64]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceBA*/ ctx[67], /*numbersBA*/ ctx[65]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6037,7 +6048,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_13(...args) {
-    		return /*click_handler_13*/ ctx[131](/*item*/ ctx[173], ...args);
+    		return /*click_handler_13*/ ctx[132](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6051,14 +6062,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6080,11 +6091,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6112,20 +6123,20 @@ var app = (function () {
     	};
     }
 
-    // (1518:0) {#each numbersRO as item }
+    // (1519:0) {#each numbersRO as item }
     function create_each_block_12(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeRO*/ ctx[61], /*numbersRO*/ ctx[60]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeRO*/ ctx[62], /*numbersRO*/ ctx[61]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descRO*/ ctx[63], /*numbersRO*/ ctx[60]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descRO*/ ctx[64], /*numbersRO*/ ctx[61]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceRO*/ ctx[62], /*numbersRO*/ ctx[60]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceRO*/ ctx[63], /*numbersRO*/ ctx[61]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6134,7 +6145,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_12(...args) {
-    		return /*click_handler_12*/ ctx[130](/*item*/ ctx[173], ...args);
+    		return /*click_handler_12*/ ctx[131](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6148,14 +6159,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6177,11 +6188,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6209,20 +6220,20 @@ var app = (function () {
     	};
     }
 
-    // (1504:0) {#each numbersCA as item }
+    // (1505:0) {#each numbersCA as item }
     function create_each_block_11(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeCA*/ ctx[57], /*numbersCA*/ ctx[56]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeCA*/ ctx[58], /*numbersCA*/ ctx[57]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descCA*/ ctx[59], /*numbersCA*/ ctx[56]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descCA*/ ctx[60], /*numbersCA*/ ctx[57]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceCA*/ ctx[58], /*numbersCA*/ ctx[56]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceCA*/ ctx[59], /*numbersCA*/ ctx[57]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6231,7 +6242,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_11(...args) {
-    		return /*click_handler_11*/ ctx[129](/*item*/ ctx[173], ...args);
+    		return /*click_handler_11*/ ctx[130](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6245,14 +6256,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6274,11 +6285,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6306,20 +6317,20 @@ var app = (function () {
     	};
     }
 
-    // (1490:0) {#each numbersSA as item }
+    // (1491:0) {#each numbersSA as item }
     function create_each_block_10(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeSA*/ ctx[53], /*numbersSA*/ ctx[52]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeSA*/ ctx[54], /*numbersSA*/ ctx[53]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descSA*/ ctx[55], /*numbersSA*/ ctx[52]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descSA*/ ctx[56], /*numbersSA*/ ctx[53]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceSA*/ ctx[54], /*numbersSA*/ ctx[52]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceSA*/ ctx[55], /*numbersSA*/ ctx[53]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6328,7 +6339,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_10(...args) {
-    		return /*click_handler_10*/ ctx[128](/*item*/ ctx[173], ...args);
+    		return /*click_handler_10*/ ctx[129](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6342,14 +6353,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6371,11 +6382,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6403,20 +6414,20 @@ var app = (function () {
     	};
     }
 
-    // (1475:0) {#each numbersT as item }
+    // (1476:0) {#each numbersT as item }
     function create_each_block_9(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeT*/ ctx[49], /*numbersT*/ ctx[48]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeT*/ ctx[50], /*numbersT*/ ctx[49]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descT*/ ctx[51], /*numbersT*/ ctx[48]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descT*/ ctx[52], /*numbersT*/ ctx[49]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceT*/ ctx[50], /*numbersT*/ ctx[48]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceT*/ ctx[51], /*numbersT*/ ctx[49]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6425,7 +6436,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_9(...args) {
-    		return /*click_handler_9*/ ctx[127](/*item*/ ctx[173], ...args);
+    		return /*click_handler_9*/ ctx[128](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6439,14 +6450,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6468,11 +6479,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6500,20 +6511,20 @@ var app = (function () {
     	};
     }
 
-    // (1461:0) {#each numbersB as item }
+    // (1462:0) {#each numbersB as item }
     function create_each_block_8(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeB*/ ctx[45], /*numbersB*/ ctx[44]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeB*/ ctx[46], /*numbersB*/ ctx[45]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descB*/ ctx[47], /*numbersB*/ ctx[44]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descB*/ ctx[48], /*numbersB*/ ctx[45]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceB*/ ctx[46], /*numbersB*/ ctx[44]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceB*/ ctx[47], /*numbersB*/ ctx[45]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6522,7 +6533,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_8(...args) {
-    		return /*click_handler_8*/ ctx[126](/*item*/ ctx[173], ...args);
+    		return /*click_handler_8*/ ctx[127](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6536,14 +6547,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6565,11 +6576,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6597,20 +6608,20 @@ var app = (function () {
     	};
     }
 
-    // (1448:0) {#each numbersS as item }
+    // (1449:0) {#each numbersS as item }
     function create_each_block_7(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeS*/ ctx[41], /*numbersS*/ ctx[40]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeS*/ ctx[42], /*numbersS*/ ctx[41]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descS*/ ctx[43], /*numbersS*/ ctx[40]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descS*/ ctx[44], /*numbersS*/ ctx[41]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceS*/ ctx[42], /*numbersS*/ ctx[40]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceS*/ ctx[43], /*numbersS*/ ctx[41]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6619,7 +6630,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_7(...args) {
-    		return /*click_handler_7*/ ctx[125](/*item*/ ctx[173], ...args);
+    		return /*click_handler_7*/ ctx[126](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6633,14 +6644,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6662,11 +6673,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6694,20 +6705,20 @@ var app = (function () {
     	};
     }
 
-    // (1435:0) {#each numbersD as item }
+    // (1436:0) {#each numbersD as item }
     function create_each_block_6(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeD*/ ctx[37], /*numbersD*/ ctx[36]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeD*/ ctx[38], /*numbersD*/ ctx[37]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descD*/ ctx[39], /*numbersD*/ ctx[36]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descD*/ ctx[40], /*numbersD*/ ctx[37]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceD*/ ctx[38], /*numbersD*/ ctx[36]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceD*/ ctx[39], /*numbersD*/ ctx[37]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6716,7 +6727,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_6(...args) {
-    		return /*click_handler_6*/ ctx[124](/*item*/ ctx[173], ...args);
+    		return /*click_handler_6*/ ctx[125](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6730,14 +6741,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6759,11 +6770,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6791,20 +6802,20 @@ var app = (function () {
     	};
     }
 
-    // (1421:0) {#each numbersH as item }
+    // (1422:0) {#each numbersH as item }
     function create_each_block_5$1(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeH*/ ctx[33], /*numbersH*/ ctx[32]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeH*/ ctx[34], /*numbersH*/ ctx[33]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descH*/ ctx[35], /*numbersH*/ ctx[32]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descH*/ ctx[36], /*numbersH*/ ctx[33]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceH*/ ctx[34], /*numbersH*/ ctx[32]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceH*/ ctx[35], /*numbersH*/ ctx[33]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6813,7 +6824,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_5(...args) {
-    		return /*click_handler_5*/ ctx[123](/*item*/ ctx[173], ...args);
+    		return /*click_handler_5*/ ctx[124](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6827,14 +6838,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6856,11 +6867,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6888,20 +6899,20 @@ var app = (function () {
     	};
     }
 
-    // (1407:0) {#each numbersL as item }
+    // (1408:0) {#each numbersL as item }
     function create_each_block_4$1(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeL*/ ctx[29], /*numbersL*/ ctx[28]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeL*/ ctx[30], /*numbersL*/ ctx[29]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descL*/ ctx[31], /*numbersL*/ ctx[28]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descL*/ ctx[32], /*numbersL*/ ctx[29]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceL*/ ctx[30], /*numbersL*/ ctx[28]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceL*/ ctx[31], /*numbersL*/ ctx[29]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -6910,7 +6921,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_4(...args) {
-    		return /*click_handler_4*/ ctx[122](/*item*/ ctx[173], ...args);
+    		return /*click_handler_4*/ ctx[123](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -6924,14 +6935,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -6953,11 +6964,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -6985,20 +6996,20 @@ var app = (function () {
     	};
     }
 
-    // (1392:0) {#each numbersK as item }
+    // (1393:0) {#each numbersK as item }
     function create_each_block_3$1(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeK*/ ctx[25], /*numbersK*/ ctx[24]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeK*/ ctx[26], /*numbersK*/ ctx[25]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descK*/ ctx[27], /*numbersK*/ ctx[24]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descK*/ ctx[28], /*numbersK*/ ctx[25]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceK*/ ctx[26], /*numbersK*/ ctx[24]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceK*/ ctx[27], /*numbersK*/ ctx[25]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -7007,7 +7018,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_3(...args) {
-    		return /*click_handler_3*/ ctx[121](/*item*/ ctx[173], ...args);
+    		return /*click_handler_3*/ ctx[122](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -7021,14 +7032,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -7050,11 +7061,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -7082,20 +7093,20 @@ var app = (function () {
     	};
     }
 
-    // (1378:0) {#each numbersR as item }
+    // (1379:0) {#each numbersR as item }
     function create_each_block_2$1(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeR*/ ctx[21], /*numbersR*/ ctx[20]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeR*/ ctx[22], /*numbersR*/ ctx[21]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descR*/ ctx[23], /*numbersR*/ ctx[20]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descR*/ ctx[24], /*numbersR*/ ctx[21]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceR*/ ctx[22], /*numbersR*/ ctx[20]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceR*/ ctx[23], /*numbersR*/ ctx[21]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -7104,7 +7115,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_2(...args) {
-    		return /*click_handler_2*/ ctx[120](/*item*/ ctx[173], ...args);
+    		return /*click_handler_2*/ ctx[121](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -7118,14 +7129,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -7147,11 +7158,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -7179,20 +7190,20 @@ var app = (function () {
     	};
     }
 
-    // (1364:0) {#each numbersM as item }
+    // (1365:0) {#each numbersM as item }
     function create_each_block_1$2(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*typeM*/ ctx[17], /*numbersM*/ ctx[16]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*typeM*/ ctx[18], /*numbersM*/ ctx[17]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*descM*/ ctx[19], /*numbersM*/ ctx[16]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*descM*/ ctx[20], /*numbersM*/ ctx[17]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*priceM*/ ctx[18], /*numbersM*/ ctx[16]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*priceM*/ ctx[19], /*numbersM*/ ctx[17]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -7201,7 +7212,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler_1(...args) {
-    		return /*click_handler_1*/ ctx[119](/*item*/ ctx[173], ...args);
+    		return /*click_handler_1*/ ctx[120](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -7215,14 +7226,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -7244,11 +7255,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -7276,20 +7287,20 @@ var app = (function () {
     	};
     }
 
-    // (1351:0) {#each numbers as item }
+    // (1352:0) {#each numbers as item }
     function create_each_block$2(ctx) {
     	let div1;
     	let img;
     	let img_src_value;
     	let div0;
     	let p0;
-    	let t0_value = mark(/*item*/ ctx[173], /*type*/ ctx[13], /*numbers*/ ctx[12]) + "";
+    	let t0_value = mark(/*item*/ ctx[174], /*type*/ ctx[14], /*numbers*/ ctx[13]) + "";
     	let t0;
     	let p1;
-    	let t1_value = mark(/*item*/ ctx[173], /*desc*/ ctx[15], /*numbers*/ ctx[12]) + "";
+    	let t1_value = mark(/*item*/ ctx[174], /*desc*/ ctx[16], /*numbers*/ ctx[13]) + "";
     	let t1;
     	let p2;
-    	let t2_value = mark(/*item*/ ctx[173], /*price*/ ctx[14], /*numbers*/ ctx[12]) + "";
+    	let t2_value = mark(/*item*/ ctx[174], /*price*/ ctx[15], /*numbers*/ ctx[13]) + "";
     	let t2;
     	let div0_class_value;
     	let div1_transition;
@@ -7298,7 +7309,7 @@ var app = (function () {
     	let dispose;
 
     	function click_handler(...args) {
-    		return /*click_handler*/ ctx[118](/*item*/ ctx[173], ...args);
+    		return /*click_handler*/ ctx[119](/*item*/ ctx[174], ...args);
     	}
 
     	return {
@@ -7312,14 +7323,14 @@ var app = (function () {
     			t1 = text(t1_value);
     			p2 = element("p");
     			t2 = text(t2_value);
-    			attr(img, "class", "imgC " + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) attr(img, "src", img_src_value);
+    			attr(img, "class", "imgC " + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			if (img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(p0, "class", "mark1 svelte-1yhnvv8");
-    			attr(p1, "class", "mark2 svelte-1yhnvv8");
-    			attr(p2, "class", "mark3 svelte-1yhnvv8");
-    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8");
-    			attr(div1, "class", "flex-col svelte-1yhnvv8");
+    			attr(p0, "class", "mark1 svelte-18kfgwi");
+    			attr(p1, "class", "mark2 svelte-18kfgwi");
+    			attr(p2, "class", "mark3 svelte-18kfgwi");
+    			attr(div0, "class", div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi");
+    			attr(div1, "class", "flex-col svelte-18kfgwi");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -7341,11 +7352,11 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[173] + ".png"))) {
+    			if (!current || dirty[0] & /*op2*/ 2 && img.src !== (img_src_value = "" + (/*op2*/ ctx[1] + "/" + /*item*/ ctx[174] + ".png"))) {
     				attr(img, "src", img_src_value);
     			}
 
-    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[173] + " svelte-1yhnvv8")) {
+    			if (!current || dirty[0] & /*op2*/ 2 && div0_class_value !== (div0_class_value = "contentPic " + /*op2*/ ctx[1] + /*item*/ ctx[174] + " svelte-18kfgwi")) {
     				attr(div0, "class", div0_class_value);
     			}
     		},
@@ -7373,7 +7384,7 @@ var app = (function () {
     	};
     }
 
-    // (1732:0) {#if kis === false }
+    // (1733:0) {#if kis === false }
     function create_if_block$4(ctx) {
     	let carts;
     	let current;
@@ -7541,6 +7552,7 @@ var app = (function () {
     	let end = true;
     	let cart1 = [];
     	let cart2 = [];
+    	let nostal = [];
     	const dispatch = createEventDispatcher();
 
     	function goSingle() {
@@ -8646,78 +8658,95 @@ var app = (function () {
     	}
 
     	const click_handler = (item, e) => {
+    		$$invalidate(2, ko = mark(item, price, numbers));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy(), goSingle());
     	};
 
     	const click_handler_1 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceM, numbersM));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_2 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceR, numbersR));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_3 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceK, numbersK));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_4 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceL, numbersL));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_5 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceH, numbersH));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_6 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceD, numbersD));
     		console.log(op2 + item);
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_7 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceS, numbersS));
     		console.log(op2 + item);
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_8 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceB, numbersB));
     		console.log(op2 + item);
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_9 = (item, e) => {
-    		console.log(op2 + item);
+    		$$invalidate(2, ko = mark(item, priceT, numbersT));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_10 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceSA, numbersSA));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_11 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceCA, numbersCA));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_12 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceRO, numbersRO));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_13 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceBA, numbersBA));
     		($$invalidate(8, boxBelow = document.querySelector("." + op2 + item).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_14 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceSCA, numbersSCA));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_15 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceSOTS, numbersSOTS));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_16 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceSMD, numbersSMD));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_17 = (item, e) => {
+    		$$invalidate(2, ko = mark(item, priceSCA, numbersSCA));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
@@ -8726,32 +8755,32 @@ var app = (function () {
     	};
 
     	const click_handler_19 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSOF, numbersSOF));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_20 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSRI, numbersSRI));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_21 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSNE, numbersSNE));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_22 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSEA, numbersSEA));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_23 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSRE, numbersSRE));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
     	const click_handler_24 = (item, e) => {
-    		console.log(item);
+    		$$invalidate(2, ko = mark(item, priceSMO, numbersSMO));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
@@ -8782,6 +8811,7 @@ var app = (function () {
     		boxBelow,
     		cart1,
     		cart2,
+    		nostal,
     		goSingle,
     		numbers,
     		type,
@@ -9320,17 +9350,17 @@ var app = (function () {
 
     function get_each_context_1$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[17] = list[i];
+    	child_ctx[21] = list[i];
     	return child_ctx;
     }
 
     function get_each_context$1(ctx, list, i) {
     	const child_ctx = ctx.slice();
-    	child_ctx[17] = list[i];
+    	child_ctx[21] = list[i];
     	return child_ctx;
     }
 
-    // (92:0) {:else}
+    // (113:0) {:else}
     function create_else_block(ctx) {
     	let each_1_anchor;
     	let current;
@@ -9362,7 +9392,7 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*choz, doz, s, mush, cho, cart2, cart1*/ 254) {
+    			if (dirty & /*n, doz, s, mush, choz, oz, cho, cart2, cart1*/ 510) {
     				each_value_1 = [.../*s*/ ctx[7]];
     				let i;
 
@@ -9414,7 +9444,7 @@ var app = (function () {
     	};
     }
 
-    // (81:0) {#if op5 !== "empty4"}
+    // (95:0) {#if op5 !== "empty4"}
     function create_if_block$2(ctx) {
     	let each_1_anchor;
     	let current;
@@ -9446,7 +9476,7 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty & /*choz, doz, s, mush, cho, cart2, cart1*/ 254) {
+    			if (dirty & /*n, doz, s, mush, choz, oz, cho, cart2, cart1*/ 510) {
     				each_value = [.../*s*/ ctx[7]];
     				let i;
 
@@ -9498,7 +9528,7 @@ var app = (function () {
     	};
     }
 
-    // (93:0) {#each [...s] as item}
+    // (114:0) {#each [...s] as item}
     function create_each_block_1$1(ctx) {
     	let div2;
     	let img;
@@ -9507,16 +9537,19 @@ var app = (function () {
     	let t0;
     	let div1;
     	let html_tag;
-    	let raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[17])] + "";
+    	let raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[21])] + "";
     	let t1;
     	let div0;
     	let button0;
     	let t3;
-    	let t4_value = /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])] + "";
+    	let t4_value = (/*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])]) + "";
     	let t4;
     	let button1;
-    	let div1_transition;
     	let t6;
+    	let t7_value = [.../*n*/ ctx[8]][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] * /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] + "";
+    	let t7;
+    	let div1_transition;
+    	let t8;
     	let div2_transition;
     	let current;
     	let mounted;
@@ -9537,15 +9570,17 @@ var app = (function () {
     			button1 = element("button");
     			button1.textContent = "-";
     			t6 = space();
-    			attr(img, "class", "checkin svelte-9zllfa");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[17] + ".png"))) attr(img, "src", img_src_value);
+    			t7 = text(t7_value);
+    			t8 = space();
+    			attr(img, "class", "checkin svelte-6n9i85");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[21] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(button0, "class", "add");
-    			attr(button1, "class", "remove");
-    			attr(div0, "class", "numbers");
-    			attr(div1, "class", "contentPic svelte-9zllfa");
-    			attr(div2, "class", "start svelte-9zllfa");
+    			attr(button0, "class", "add svelte-6n9i85");
+    			attr(button1, "class", "remove svelte-6n9i85");
+    			attr(div0, "class", "numbers svelte-6n9i85");
+    			attr(div1, "class", "contentPic svelte-6n9i85");
+    			attr(div2, "class", "start svelte-6n9i85");
     		},
     		m(target, anchor) {
     			insert(target, div2, anchor);
@@ -9559,16 +9594,18 @@ var app = (function () {
     			append(div0, t3);
     			append(div0, t4);
     			append(div0, button1);
-    			append(div2, t6);
+    			append(div0, t6);
+    			append(div0, t7);
+    			append(div2, t8);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
     					listen(button0, "click", function () {
-    						if (is_function(/*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])))) /*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])).apply(this, arguments);
+    						if (is_function(/*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])))) /*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])).apply(this, arguments);
     					}),
     					listen(button1, "click", function () {
-    						if (is_function(/*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])))) /*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])).apply(this, arguments);
+    						if (is_function(/*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])))) /*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])).apply(this, arguments);
     					})
     				];
 
@@ -9577,8 +9614,9 @@ var app = (function () {
     		},
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if ((!current || dirty & /*cart2, cart1*/ 6) && raw_value !== (raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[17])] + "")) html_tag.p(raw_value);
-    			if ((!current || dirty & /*mush, doz*/ 24) && t4_value !== (t4_value = /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])] + "")) set_data(t4, t4_value);
+    			if ((!current || dirty & /*cart2, cart1*/ 6) && raw_value !== (raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[21])] + "")) html_tag.p(raw_value);
+    			if ((!current || dirty & /*mush, doz*/ 24) && t4_value !== (t4_value = (/*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])]) + "")) set_data(t4, t4_value);
+    			if ((!current || dirty & /*doz, mush*/ 24) && t7_value !== (t7_value = [.../*n*/ ctx[8]][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] * /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] + "")) set_data(t7, t7_value);
     		},
     		i(local) {
     			if (current) return;
@@ -9620,7 +9658,7 @@ var app = (function () {
     	};
     }
 
-    // (82:0) {#each [...s] as item}
+    // (96:0) {#each [...s] as item}
     function create_each_block$1(ctx) {
     	let div2;
     	let img;
@@ -9629,16 +9667,20 @@ var app = (function () {
     	let t0;
     	let div1;
     	let html_tag;
-    	let raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[17])] + "";
+    	let raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[21])] + "";
     	let t1;
     	let div0;
     	let button0;
     	let t3;
-    	let t4_value = /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])] + "";
+    	let t4_value = (/*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])]) + "";
     	let t4;
+    	let t5;
     	let button1;
+    	let t7;
+    	let t8_value = [.../*n*/ ctx[8]][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] * /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] + "";
+    	let t8;
     	let div1_transition;
-    	let t6;
+    	let t9;
     	let div2_transition;
     	let current;
     	let mounted;
@@ -9656,18 +9698,21 @@ var app = (function () {
     			button0.textContent = "+";
     			t3 = space();
     			t4 = text(t4_value);
+    			t5 = space();
     			button1 = element("button");
     			button1.textContent = "-";
-    			t6 = space();
-    			attr(img, "class", "checkin svelte-9zllfa");
-    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[17] + ".png"))) attr(img, "src", img_src_value);
+    			t7 = space();
+    			t8 = text(t8_value);
+    			t9 = space();
+    			attr(img, "class", "checkin svelte-6n9i85");
+    			if (img.src !== (img_src_value = "" + (/*item*/ ctx[21] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(button0, "class", "add");
-    			attr(button1, "class", "remove");
-    			attr(div0, "class", "numbers");
-    			attr(div1, "class", "contentPic svelte-9zllfa");
-    			attr(div2, "class", "start svelte-9zllfa");
+    			attr(button0, "class", "add svelte-6n9i85");
+    			attr(button1, "class", "remove svelte-6n9i85");
+    			attr(div0, "class", "numbers svelte-6n9i85");
+    			attr(div1, "class", "contentPic svelte-6n9i85");
+    			attr(div2, "class", "start svelte-6n9i85");
     		},
     		m(target, anchor) {
     			insert(target, div2, anchor);
@@ -9680,17 +9725,20 @@ var app = (function () {
     			append(div0, button0);
     			append(div0, t3);
     			append(div0, t4);
+    			append(div0, t5);
     			append(div0, button1);
-    			append(div2, t6);
+    			append(div0, t7);
+    			append(div0, t8);
+    			append(div2, t9);
     			current = true;
 
     			if (!mounted) {
     				dispose = [
     					listen(button0, "click", function () {
-    						if (is_function(/*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])))) /*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])).apply(this, arguments);
+    						if (is_function(/*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])))) /*cho*/ ctx[5](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])).apply(this, arguments);
     					}),
     					listen(button1, "click", function () {
-    						if (is_function(/*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])))) /*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])).apply(this, arguments);
+    						if (is_function(/*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])))) /*choz*/ ctx[6](/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])).apply(this, arguments);
     					})
     				];
 
@@ -9699,8 +9747,9 @@ var app = (function () {
     		},
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
-    			if ((!current || dirty & /*cart2, cart1*/ 6) && raw_value !== (raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[17])] + "")) html_tag.p(raw_value);
-    			if ((!current || dirty & /*mush, doz*/ 24) && t4_value !== (t4_value = /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[17])] + "")) set_data(t4, t4_value);
+    			if ((!current || dirty & /*cart2, cart1*/ 6) && raw_value !== (raw_value = /*cart2*/ ctx[2][/*cart1*/ ctx[1].indexOf(/*item*/ ctx[21])] + "")) html_tag.p(raw_value);
+    			if ((!current || dirty & /*mush, doz*/ 24) && t4_value !== (t4_value = (/*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])]) + "")) set_data(t4, t4_value);
+    			if ((!current || dirty & /*doz, mush*/ 24) && t8_value !== (t8_value = [.../*n*/ ctx[8]][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] * /*mush*/ ctx[4][/*doz*/ ctx[3][0].indexOf(/*item*/ ctx[21])] + "")) set_data(t8, t8_value);
     		},
     		i(local) {
     			if (current) return;
@@ -9766,9 +9815,9 @@ var app = (function () {
     			if_block.c();
     			t0 = space();
     			div1 = element("div");
-    			div1.innerHTML = `<button class="finalBuy">Buy products</button>`;
-    			attr(div0, "class", "flex svelte-9zllfa");
-    			attr(div1, "class", "checkOut");
+    			div1.innerHTML = `<button class="finalBuy svelte-6n9i85">Buy products</button>`;
+    			attr(div0, "class", "flex svelte-6n9i85");
+    			attr(div1, "class", "checkOut svelte-6n9i85");
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
@@ -9832,6 +9881,7 @@ var app = (function () {
     	let { op4 } = $$props;
     	let { cart1 } = $$props;
     	let { cart2 } = $$props;
+    	let { nostal } = $$props;
 
     	console.log(op2 + "op2");
     	console.log(ko);
@@ -9847,43 +9897,60 @@ var app = (function () {
 
     	function choz(item) {
     		console.log(item);
-    		console.log(mush[item]);
-    		return $$invalidate(4, mush[item] = mush[item] - 1, mush);
+
+    		if (mush[item] > 0) {
+    			console.log(mush[item]);
+    			return $$invalidate(4, mush[item] = mush[item] - 1, mush);
+    		}
     	}
 
     	const s = new Set(cart1);
+    	const n = new Set(nostal);
     	console.log(s);
     	let count = {};
 
     	cart1.forEach(function (i) {
-    		$$invalidate(13, count[i] = (count[i] || 0) + 1, count);
+    		$$invalidate(15, count[i] = (count[i] || 0) + 1, count);
     	});
 
     	console.log(Object.values(count));
     	let doz = [];
     	doz.push([...s]);
     	console.log(doz);
+    	let qq = nostal;
 
     	$$self.$$set = $$props => {
-    		if ("much" in $$props) $$invalidate(9, much = $$props.much);
-    		if ("op2" in $$props) $$invalidate(10, op2 = $$props.op2);
-    		if ("boxBelow" in $$props) $$invalidate(11, boxBelow = $$props.boxBelow);
+    		if ("much" in $$props) $$invalidate(10, much = $$props.much);
+    		if ("op2" in $$props) $$invalidate(11, op2 = $$props.op2);
+    		if ("boxBelow" in $$props) $$invalidate(12, boxBelow = $$props.boxBelow);
     		if ("op5" in $$props) $$invalidate(0, op5 = $$props.op5);
-    		if ("ko" in $$props) $$invalidate(12, ko = $$props.ko);
-    		if ("op4" in $$props) $$invalidate(8, op4 = $$props.op4);
+    		if ("ko" in $$props) $$invalidate(13, ko = $$props.ko);
+    		if ("op4" in $$props) $$invalidate(9, op4 = $$props.op4);
     		if ("cart1" in $$props) $$invalidate(1, cart1 = $$props.cart1);
     		if ("cart2" in $$props) $$invalidate(2, cart2 = $$props.cart2);
+    		if ("nostal" in $$props) $$invalidate(14, nostal = $$props.nostal);
     	};
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*count*/ 8192) {
+    		if ($$self.$$.dirty & /*count*/ 32768) {
     			$$invalidate(4, mush = Object.values(count));
     		}
 
     		if ($$self.$$.dirty & /*doz*/ 8) {
     			$$invalidate(3, doz);
     		}
+
+    		if ($$self.$$.dirty & /*ko, mush*/ 8208) {
+    			ko * mush[0];
+    		}
+
+    		if ($$self.$$.dirty & /*nostal*/ 16384) {
+    			console.log(nostal);
+    		}
     	};
+
+    	console.log([...n]);
+    	console.log(qq);
 
     	return [
     		op5,
@@ -9894,11 +9961,13 @@ var app = (function () {
     		cho,
     		choz,
     		s,
+    		n,
     		op4,
     		much,
     		op2,
     		boxBelow,
     		ko,
+    		nostal,
     		count
     	];
     }
@@ -9908,14 +9977,15 @@ var app = (function () {
     		super();
 
     		init(this, options, instance$2, create_fragment$2, safe_not_equal, {
-    			much: 9,
-    			op2: 10,
-    			boxBelow: 11,
+    			much: 10,
+    			op2: 11,
+    			boxBelow: 12,
     			op5: 0,
-    			ko: 12,
-    			op4: 8,
+    			ko: 13,
+    			op4: 9,
     			cart1: 1,
-    			cart2: 2
+    			cart2: 2,
+    			nostal: 14
     		});
     	}
     }
@@ -9979,7 +10049,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr(a, "href", /*item*/ ctx[25].href);
-    			attr(a, "class", "svelte-1j27i68");
+    			attr(a, "class", "svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, li, anchor);
@@ -10049,9 +10119,11 @@ var app = (function () {
     	};
     }
 
-    // (202:41) 
+    // (205:41) 
     function create_if_block_4(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
+    	let t1;
     	let each_value_4 = /*firmsW*/ ctx[9].slice(0, /*firmsW*/ ctx[9].length);
     	let each_blocks = [];
 
@@ -10061,19 +10133,24 @@ var app = (function () {
 
     	return {
     		c() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			div0.innerHTML = `<strong>Always on top</strong>`;
+    			t1 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr(div, "class", "firms svelte-1j27i68");
+    			attr(div1, "class", "firms svelte-fckjwj");
     		},
     		m(target, anchor) {
-    			insert(target, div, anchor);
+    			insert(target, div1, anchor);
+    			append(div1, div0);
+    			append(div1, t1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				each_blocks[i].m(div1, null);
     			}
     		},
     		p(ctx, dirty) {
@@ -10089,7 +10166,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_4(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -10101,15 +10178,17 @@ var app = (function () {
     			}
     		},
     		d(detaching) {
-    			if (detaching) detach(div);
+    			if (detaching) detach(div1);
     			destroy_each(each_blocks, detaching);
     		}
     	};
     }
 
-    // (193:39) 
+    // (195:39) 
     function create_if_block_3(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
+    	let t1;
     	let each_value_3 = /*firmsJ*/ ctx[8].slice(0, /*firmsJ*/ ctx[8].length);
     	let each_blocks = [];
 
@@ -10119,19 +10198,24 @@ var app = (function () {
 
     	return {
     		c() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			div0.innerHTML = `<strong>New collections</strong>`;
+    			t1 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr(div, "class", "firms svelte-1j27i68");
+    			attr(div1, "class", "firms svelte-fckjwj");
     		},
     		m(target, anchor) {
-    			insert(target, div, anchor);
+    			insert(target, div1, anchor);
+    			append(div1, div0);
+    			append(div1, t1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				each_blocks[i].m(div1, null);
     			}
     		},
     		p(ctx, dirty) {
@@ -10147,7 +10231,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_3(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -10159,15 +10243,17 @@ var app = (function () {
     			}
     		},
     		d(detaching) {
-    			if (detaching) detach(div);
+    			if (detaching) detach(div1);
     			destroy_each(each_blocks, detaching);
     		}
     	};
     }
 
-    // (184:37) 
+    // (185:37) 
     function create_if_block_2(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
+    	let t1;
     	let each_value_2 = /*firmsC*/ ctx[7].slice(0, /*firmsC*/ ctx[7].length);
     	let each_blocks = [];
 
@@ -10177,19 +10263,24 @@ var app = (function () {
 
     	return {
     		c() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			div0.innerHTML = `<strong>Discounted</strong>`;
+    			t1 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr(div, "class", "firms svelte-1j27i68");
+    			attr(div1, "class", "firms svelte-fckjwj");
     		},
     		m(target, anchor) {
-    			insert(target, div, anchor);
+    			insert(target, div1, anchor);
+    			append(div1, div0);
+    			append(div1, t1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				each_blocks[i].m(div1, null);
     			}
     		},
     		p(ctx, dirty) {
@@ -10205,7 +10296,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_2(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -10217,7 +10308,7 @@ var app = (function () {
     			}
     		},
     		d(detaching) {
-    			if (detaching) detach(div);
+    			if (detaching) detach(div1);
     			destroy_each(each_blocks, detaching);
     		}
     	};
@@ -10225,7 +10316,9 @@ var app = (function () {
 
     // (174:0) {#if cur == navItems[0].label}
     function create_if_block_1$1(ctx) {
-    	let div;
+    	let div1;
+    	let div0;
+    	let t1;
     	let each_value_1 = /*firms*/ ctx[6].slice(0, /*firms*/ ctx[6].length);
     	let each_blocks = [];
 
@@ -10235,19 +10328,24 @@ var app = (function () {
 
     	return {
     		c() {
-    			div = element("div");
+    			div1 = element("div");
+    			div0 = element("div");
+    			div0.innerHTML = `<strong>New collections</strong>`;
+    			t1 = space();
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
     				each_blocks[i].c();
     			}
 
-    			attr(div, "class", "firms svelte-1j27i68");
+    			attr(div1, "class", "firms svelte-fckjwj");
     		},
     		m(target, anchor) {
-    			insert(target, div, anchor);
+    			insert(target, div1, anchor);
+    			append(div1, div0);
+    			append(div1, t1);
 
     			for (let i = 0; i < each_blocks.length; i += 1) {
-    				each_blocks[i].m(div, null);
+    				each_blocks[i].m(div1, null);
     			}
     		},
     		p(ctx, dirty) {
@@ -10263,7 +10361,7 @@ var app = (function () {
     					} else {
     						each_blocks[i] = create_each_block_1(child_ctx);
     						each_blocks[i].c();
-    						each_blocks[i].m(div, null);
+    						each_blocks[i].m(div1, null);
     					}
     				}
 
@@ -10275,13 +10373,13 @@ var app = (function () {
     			}
     		},
     		d(detaching) {
-    			if (detaching) detach(div);
+    			if (detaching) detach(div1);
     			destroy_each(each_blocks, detaching);
     		}
     	};
     }
 
-    // (204:6) {#each firmsW.slice(0, firmsW.length) as item}
+    // (208:6) {#each firmsW.slice(0, firmsW.length) as item}
     function create_each_block_4(ctx) {
     	let div;
     	let t0_value = /*item*/ ctx[25] + "";
@@ -10295,7 +10393,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-1j27i68");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10316,7 +10414,7 @@ var app = (function () {
     	};
     }
 
-    // (195:8) {#each firmsJ.slice(0, firmsJ.length) as item}
+    // (198:8) {#each firmsJ.slice(0, firmsJ.length) as item}
     function create_each_block_3(ctx) {
     	let div;
     	let t0_value = /*item*/ ctx[25] + "";
@@ -10330,7 +10428,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-1j27i68");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10351,7 +10449,7 @@ var app = (function () {
     	};
     }
 
-    // (186:6) {#each firmsC.slice(0, firmsC.length) as item}
+    // (188:6) {#each firmsC.slice(0, firmsC.length) as item}
     function create_each_block_2(ctx) {
     	let div;
     	let t0_value = /*item*/ ctx[25] + "";
@@ -10365,7 +10463,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-1j27i68");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10386,7 +10484,7 @@ var app = (function () {
     	};
     }
 
-    // (176:4) {#each firms.slice(0, firms.length) as item}
+    // (177:4) {#each firms.slice(0, firms.length) as item}
     function create_each_block_1(ctx) {
     	let div;
     	let t0_value = /*item*/ ctx[25] + "";
@@ -10400,7 +10498,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-1j27i68");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10421,7 +10519,7 @@ var app = (function () {
     	};
     }
 
-    // (226:4) {#each quinq.slice(0, quinq.length) as item}
+    // (230:4) {#each quinq.slice(0, quinq.length) as item}
     function create_each_block(ctx) {
     	let div;
     	let img;
@@ -10444,11 +10542,11 @@ var app = (function () {
     			button = element("button");
     			t1 = text(t1_value);
     			t2 = space();
-    			attr(img, "class", img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-1j27i68");
+    			attr(img, "class", img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-fckjwj");
     			if (img.src !== (img_src_value = "" + (/*item*/ ctx[25] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(button, "class", button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-1j27i68");
-    			attr(div, "class", "transition:slide  miniDiv svelte-1j27i68");
+    			attr(button, "class", button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-fckjwj");
+    			attr(div, "class", "transition:slide  miniDiv svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10472,7 +10570,7 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty[0] & /*quinq*/ 8 && img_class_value !== (img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-1j27i68")) {
+    			if (dirty[0] & /*quinq*/ 8 && img_class_value !== (img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-fckjwj")) {
     				attr(img, "class", img_class_value);
     			}
 
@@ -10482,7 +10580,7 @@ var app = (function () {
 
     			if (dirty[0] & /*quinq*/ 8 && t1_value !== (t1_value = /*mark*/ ctx[13](/*item*/ ctx[25]) + "")) set_data(t1, t1_value);
 
-    			if (dirty[0] & /*quinq*/ 8 && button_class_value !== (button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-1j27i68")) {
+    			if (dirty[0] & /*quinq*/ 8 && button_class_value !== (button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-fckjwj")) {
     				attr(button, "class", button_class_value);
     			}
     		},
@@ -10546,11 +10644,11 @@ var app = (function () {
     			}
 
     			attr(div0, "class", "middle-line");
-    			attr(div1, "class", div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-1j27i68"));
-    			attr(ul, "class", ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-1j27i68"));
-    			attr(div2, "class", "inner svelte-1j27i68");
-    			attr(div3, "class", "transition:slide superDiv svelte-1j27i68");
-    			attr(nav, "class", "svelte-1j27i68");
+    			attr(div1, "class", div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-fckjwj"));
+    			attr(ul, "class", ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-fckjwj"));
+    			attr(div2, "class", "inner svelte-fckjwj");
+    			attr(div3, "class", "transition:slide superDiv svelte-fckjwj");
+    			attr(nav, "class", "svelte-fckjwj");
     		},
     		m(target, anchor) {
     			insert(target, nav, anchor);
@@ -10583,7 +10681,7 @@ var app = (function () {
     			}
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*mobileMenu*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-1j27i68"))) {
+    			if (dirty[0] & /*mobileMenu*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-fckjwj"))) {
     				attr(div1, "class", div1_class_value);
     			}
 
@@ -10610,7 +10708,7 @@ var app = (function () {
     				each_blocks_1.length = each_value_5.length;
     			}
 
-    			if (dirty[0] & /*mobileMenu*/ 1 && ul_class_value !== (ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-1j27i68"))) {
+    			if (dirty[0] & /*mobileMenu*/ 1 && ul_class_value !== (ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-fckjwj"))) {
     				attr(ul, "class", ul_class_value);
     			}
 
