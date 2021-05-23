@@ -3353,7 +3353,7 @@ var app = (function () {
     			current = true;
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSBC, priceSCA, numbersSCA, priceSBC, descSBC, typeSBC*/ 2623360 | dirty[3] & /*opz, falsy*/ 50331648) {
+    			if (dirty[0] & /*ko, boxBelow, much*/ 324 | dirty[2] & /*numbersSBC, priceSBC, descSBC, typeSBC*/ 1920 | dirty[3] & /*opz, falsy*/ 50331648) {
     				each_value_14 = /*numbersSBC*/ ctx[69];
     				let i;
 
@@ -8731,7 +8731,7 @@ var app = (function () {
     	};
 
     	const click_handler_14 = (item, e) => {
-    		$$invalidate(2, ko = mark(item, priceSCA, numbersSCA));
+    		$$invalidate(2, ko = mark(item, priceSBC, numbersSBC));
     		($$invalidate(8, boxBelow = document.querySelector("." + opz(item) + opy(item)).innerHTML), $$invalidate(6, much = e.srcElement.className.split(" ")[1]), falsy());
     	};
 
