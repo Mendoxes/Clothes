@@ -950,26 +950,26 @@ var app = (function () {
     			if_block.c();
     			t10 = space();
     			div2 = element("div");
-    			attr(img0, "class", "checkin svelte-10fd4w1");
+    			attr(img0, "class", "checkin svelte-6k4043");
     			if (img0.src !== (img0_src_value = "" + (/*op2*/ ctx[2] + "/" + /*much*/ ctx[1] + ".png"))) attr(img0, "src", img0_src_value);
     			attr(img0, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(img1, "class", "imgC svelte-10fd4w1");
+    			attr(img1, "class", "imgC svelte-6k4043");
     			if (img1.src !== (img1_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("B") + ".png"))) attr(img1, "src", img1_src_value);
     			attr(img1, "alt", "");
-    			attr(img2, "class", "imgC svelte-10fd4w1");
+    			attr(img2, "class", "imgC svelte-6k4043");
     			if (img2.src !== (img2_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("E") + ".png"))) attr(img2, "src", img2_src_value);
     			attr(img2, "alt", "");
-    			attr(img3, "class", "imgC svelte-10fd4w1");
+    			attr(img3, "class", "imgC svelte-6k4043");
     			if (img3.src !== (img3_src_value = "" + (/*op2*/ ctx[2] + "/" + /*reple*/ ctx[12]("F") + ".png"))) attr(img3, "src", img3_src_value);
     			attr(img3, "alt", "");
-    			attr(div0, "class", "smallFlex svelte-10fd4w1");
+    			attr(div0, "class", "smallFlex svelte-6k4043");
     			attr(input, "type", "range");
     			attr(input, "min", "6");
     			attr(input, "max", "18");
     			attr(input, "step", "2");
-    			attr(div1, "class", "contentPic svelte-10fd4w1");
-    			attr(div3, "class", "start svelte-10fd4w1");
+    			attr(div1, "class", "contentPic svelte-6k4043");
+    			attr(div3, "class", "start svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
@@ -1185,26 +1185,26 @@ var app = (function () {
     			if_block.c();
     			t10 = space();
     			div2 = element("div");
-    			attr(img0, "class", "checkin svelte-10fd4w1");
+    			attr(img0, "class", "checkin svelte-6k4043");
     			if (img0.src !== (img0_src_value = "" + (/*op5*/ ctx[4] + "/" + /*much*/ ctx[1] + ".png"))) attr(img0, "src", img0_src_value);
     			attr(img0, "alt", "");
     			html_tag = new HtmlTag(t1);
-    			attr(img1, "class", "imgC svelte-10fd4w1");
+    			attr(img1, "class", "imgC svelte-6k4043");
     			if (img1.src !== (img1_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("B") + ".png"))) attr(img1, "src", img1_src_value);
     			attr(img1, "alt", "");
-    			attr(img2, "class", "imgC svelte-10fd4w1");
+    			attr(img2, "class", "imgC svelte-6k4043");
     			if (img2.src !== (img2_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("E") + ".png"))) attr(img2, "src", img2_src_value);
     			attr(img2, "alt", "");
-    			attr(img3, "class", "imgC svelte-10fd4w1");
+    			attr(img3, "class", "imgC svelte-6k4043");
     			if (img3.src !== (img3_src_value = "" + (/*op5*/ ctx[4] + "/" + /*reple*/ ctx[12]("F") + ".png"))) attr(img3, "src", img3_src_value);
     			attr(img3, "alt", "");
-    			attr(div0, "class", "smallFlex svelte-10fd4w1");
+    			attr(div0, "class", "smallFlex svelte-6k4043");
     			attr(input, "type", "range");
     			attr(input, "min", "6");
     			attr(input, "max", "18");
     			attr(input, "step", "2");
-    			attr(div1, "class", "contentPic svelte-10fd4w1");
-    			attr(div3, "class", "start svelte-10fd4w1");
+    			attr(div1, "class", "contentPic svelte-6k4043");
+    			attr(div3, "class", "start svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, div3, anchor);
@@ -1363,7 +1363,7 @@ var app = (function () {
     			t0 = text("UK Size:");
     			t1 = text(/*a*/ ctx[9]);
     			t2 = text(" (Out of stock)");
-    			attr(p, "class", "red svelte-10fd4w1");
+    			attr(p, "class", "red svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1391,7 +1391,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("UK Size:");
     			t1 = text(/*a*/ ctx[9]);
-    			attr(p, "class", "green svelte-10fd4w1");
+    			attr(p, "class", "green svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1420,7 +1420,7 @@ var app = (function () {
     			t0 = text("UK Size:");
     			t1 = text(/*a*/ ctx[9]);
     			t2 = text(" (Out of stock)");
-    			attr(p, "class", "red svelte-10fd4w1");
+    			attr(p, "class", "red svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -1448,7 +1448,7 @@ var app = (function () {
     			p = element("p");
     			t0 = text("UK Size:");
     			t1 = text(/*a*/ ctx[9]);
-    			attr(p, "class", "green svelte-10fd4w1");
+    			attr(p, "class", "green svelte-6k4043");
     		},
     		m(target, anchor) {
     			insert(target, p, anchor);
@@ -8975,7 +8975,7 @@ var app = (function () {
     		c() {
     			div = element("div");
     			div.innerHTML = `<b>50% of Summer dresses colection</b>`;
-    			attr(div, "class", "content nameShop opacity1 svelte-ie5zrp");
+    			attr(div, "class", "content nameShop opacity1 svelte-wkvrr1");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -9012,8 +9012,8 @@ var app = (function () {
     	return {
     		c() {
     			div = element("div");
-    			div.innerHTML = `<p class="hov svelte-ie5zrp"><b>Shop now</b></p>`;
-    			attr(div, "class", "contentsm point  opacity1 svelte-ie5zrp");
+    			div.innerHTML = `<p class="hov svelte-wkvrr1"><b>Shop now</b></p>`;
+    			attr(div, "class", "contentsm point  opacity1 svelte-wkvrr1");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -9062,13 +9062,13 @@ var app = (function () {
 
     			t3 = space();
     			div1 = element("div");
-    			div1.innerHTML = `<span class="oldP svelte-ie5zrp">220£ </span><b>120£</b>`;
+    			div1.innerHTML = `<span class="oldP svelte-wkvrr1">220£ </span><b>120£</b>`;
     			t6 = space();
     			div2 = element("div");
-    			div2.innerHTML = `<span class="oldP svelte-ie5zrp">350£ </span><b>240£</b>`;
-    			attr(div0, "class", "text-block svelte-ie5zrp");
-    			attr(div1, "class", "text-block newposleft svelte-ie5zrp");
-    			attr(div2, "class", "text-block newposright svelte-ie5zrp");
+    			div2.innerHTML = `<span class="oldP svelte-wkvrr1">350£ </span><b>240£</b>`;
+    			attr(div0, "class", "text-block svelte-wkvrr1");
+    			attr(div1, "class", "text-block newposleft svelte-wkvrr1");
+    			attr(div2, "class", "text-block newposright svelte-wkvrr1");
     		},
     		m(target, anchor) {
     			insert(target, div0, anchor);
@@ -9173,20 +9173,20 @@ var app = (function () {
     			div1 = element("div");
     			t7 = space();
     			img2 = element("img");
-    			attr(h1, "class", "nameShop svelte-ie5zrp");
-    			attr(img0, "class", "testy  svelte-ie5zrp");
+    			attr(h1, "class", "nameShop svelte-wkvrr1");
+    			attr(img0, "class", "testy  svelte-wkvrr1");
     			attr(img0, "width", "1500");
     			if (img0.src !== (img0_src_value = "main2.png")) attr(img0, "src", img0_src_value);
     			attr(img0, "alt", "");
-    			attr(div0, "class", "main container svelte-ie5zrp");
-    			attr(img1, "class", "imgS2 svelte-ie5zrp");
+    			attr(div0, "class", "main container svelte-wkvrr1");
+    			attr(img1, "class", "imgS2 svelte-wkvrr1");
     			if (img1.src !== (img1_src_value = "sandal.png")) attr(img1, "src", img1_src_value);
     			attr(img1, "alt", "");
-    			attr(div1, "class", "middleG svelte-ie5zrp");
-    			attr(img2, "class", "imgS svelte-ie5zrp");
+    			attr(div1, "class", "middleG svelte-wkvrr1");
+    			attr(img2, "class", "imgS svelte-wkvrr1");
     			if (img2.src !== (img2_src_value = "bag.png")) attr(img2, "src", img2_src_value);
     			attr(img2, "alt", "");
-    			attr(div2, "class", "row svelte-ie5zrp");
+    			attr(div2, "class", "row svelte-wkvrr1");
     		},
     		m(target, anchor) {
     			insert(target, h1, anchor);
@@ -10049,7 +10049,7 @@ var app = (function () {
     			t0 = text(t0_value);
     			t1 = space();
     			attr(a, "href", /*item*/ ctx[25].href);
-    			attr(a, "class", "svelte-fckjwj");
+    			attr(a, "class", "svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, li, anchor);
@@ -10142,7 +10142,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(div1, "class", "firms svelte-fckjwj");
+    			attr(div1, "class", "firms svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -10207,7 +10207,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(div1, "class", "firms svelte-fckjwj");
+    			attr(div1, "class", "firms svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -10272,7 +10272,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(div1, "class", "firms svelte-fckjwj");
+    			attr(div1, "class", "firms svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -10337,7 +10337,7 @@ var app = (function () {
     				each_blocks[i].c();
     			}
 
-    			attr(div1, "class", "firms svelte-fckjwj");
+    			attr(div1, "class", "firms svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div1, anchor);
@@ -10393,7 +10393,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10428,7 +10428,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10463,7 +10463,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10498,7 +10498,7 @@ var app = (function () {
     			div = element("div");
     			t0 = text(t0_value);
     			t1 = space();
-    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-fckjwj");
+    			attr(div, "class", "transition:slide point ok " + /*item*/ ctx[25] + " svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10542,11 +10542,11 @@ var app = (function () {
     			button = element("button");
     			t1 = text(t1_value);
     			t2 = space();
-    			attr(img, "class", img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-fckjwj");
+    			attr(img, "class", img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-95165n");
     			if (img.src !== (img_src_value = "" + (/*item*/ ctx[25] + ".png"))) attr(img, "src", img_src_value);
     			attr(img, "alt", "");
-    			attr(button, "class", button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-fckjwj");
-    			attr(div, "class", "transition:slide  miniDiv svelte-fckjwj");
+    			attr(button, "class", button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-95165n");
+    			attr(div, "class", "transition:slide  miniDiv svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, div, anchor);
@@ -10570,7 +10570,7 @@ var app = (function () {
     		p(new_ctx, dirty) {
     			ctx = new_ctx;
 
-    			if (dirty[0] & /*quinq*/ 8 && img_class_value !== (img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-fckjwj")) {
+    			if (dirty[0] & /*quinq*/ 8 && img_class_value !== (img_class_value = "imgWige jeden dwa " + /*item*/ ctx[25] + " svelte-95165n")) {
     				attr(img, "class", img_class_value);
     			}
 
@@ -10580,7 +10580,7 @@ var app = (function () {
 
     			if (dirty[0] & /*quinq*/ 8 && t1_value !== (t1_value = /*mark*/ ctx[13](/*item*/ ctx[25]) + "")) set_data(t1, t1_value);
 
-    			if (dirty[0] & /*quinq*/ 8 && button_class_value !== (button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-fckjwj")) {
+    			if (dirty[0] & /*quinq*/ 8 && button_class_value !== (button_class_value = "trzy jeden dwa " + /*item*/ ctx[25] + "x" + " svelte-95165n")) {
     				attr(button, "class", button_class_value);
     			}
     		},
@@ -10644,11 +10644,11 @@ var app = (function () {
     			}
 
     			attr(div0, "class", "middle-line");
-    			attr(div1, "class", div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-fckjwj"));
-    			attr(ul, "class", ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-fckjwj"));
-    			attr(div2, "class", "inner svelte-fckjwj");
-    			attr(div3, "class", "transition:slide superDiv svelte-fckjwj");
-    			attr(nav, "class", "svelte-fckjwj");
+    			attr(div1, "class", div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-95165n"));
+    			attr(ul, "class", ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-95165n"));
+    			attr(div2, "class", "inner svelte-95165n");
+    			attr(div3, "class", "transition:slide superDiv svelte-95165n");
+    			attr(nav, "class", "svelte-95165n");
     		},
     		m(target, anchor) {
     			insert(target, nav, anchor);
@@ -10681,7 +10681,7 @@ var app = (function () {
     			}
     		},
     		p(ctx, dirty) {
-    			if (dirty[0] & /*mobileMenu*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-fckjwj"))) {
+    			if (dirty[0] & /*mobileMenu*/ 1 && div1_class_value !== (div1_class_value = "" + (null_to_empty(`mobile-icon${/*mobileMenu*/ ctx[0] ? " active" : ""}`) + " svelte-95165n"))) {
     				attr(div1, "class", div1_class_value);
     			}
 
@@ -10708,7 +10708,7 @@ var app = (function () {
     				each_blocks_1.length = each_value_5.length;
     			}
 
-    			if (dirty[0] & /*mobileMenu*/ 1 && ul_class_value !== (ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-fckjwj"))) {
+    			if (dirty[0] & /*mobileMenu*/ 1 && ul_class_value !== (ul_class_value = "" + (null_to_empty(`navbar-list${/*mobileMenu*/ ctx[0] ? " mobile" : ""}`) + " svelte-95165n"))) {
     				attr(ul, "class", ul_class_value);
     			}
 
